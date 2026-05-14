@@ -1,4 +1,5 @@
 'use client';
+// Deployment trigger: 2026-05-14-V2
 
 import { motion } from 'framer-motion';
 import { Play, BrainCircuit, Trophy, Users, HelpCircle, Zap } from 'lucide-react';
