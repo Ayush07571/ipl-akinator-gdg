@@ -31,9 +31,12 @@ Respond ONLY in this exact JSON:
 `;
 
 export async function POST(req: Request) {
+  let allPlayers: Player[] = [];
   try {
     const body = await req.json();
-    const { allPlayers, history, questionNumber } = body as { allPlayers: Player[], history: any[], questionNumber: number };
+    const data = body as { allPlayers: Player[], history: any[], questionNumber: number };
+    allPlayers = data.allPlayers;
+    const { history, questionNumber } = data;
 
     console.log(`Deductor: Processing Q${questionNumber}. Probabilistic Mode.`);
 
@@ -129,7 +132,7 @@ Response JSON: { "confidence": number, "topGuess": "string", "reasoning": "strin
       console.error('Critical Deductor Error:', error);
       return NextResponse.json({ 
         error: 'Failed to deduce player',
-        remainingPlayers: allPlayers.map(p => p.name).slice(0, 5), // Return some candidates to avoid crash
+        remainingPlayers: (allPlayers || []).map(p => p.name).slice(0, 5), 
         eliminatedCount: 0,
         confidence: 0,
         readyToGuess: false,
