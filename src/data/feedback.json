@@ -1,0 +1,312 @@
+[
+  {
+    "timestamp": "2026-05-14T13:34:01.492Z",
+    "history": [
+      {
+        "question": "DOES HE BATTLE AS A WICKETKEEPER-BATSMAN?!",
+        "targetField": "isWicketkeeper",
+        "answer": "no"
+      },
+      {
+        "question": "HAS THIS TITAN EVER LIFTED THE IPL TROPHY?!",
+        "targetField": "hasWonIPLTitle",
+        "answer": "yes"
+      },
+      {
+        "question": "IS HE CURRENTLY TEARING IT UP IN THE ACTIVE ROSTER?!",
+        "targetField": "isActive",
+        "answer": "no"
+      },
+      {
+        "question": "HAS YOUR STAR EVER LED HIS TEAM TO AN IPL TITLE AS CAPTAIN?!",
+        "targetField": "hasLedTeamToTitle",
+        "answer": "no"
+      },
+      {
+        "question": "IS HE A DEVASTATING OVERSEAS POWER-HITTER?!",
+        "targetField": "isOverseas",
+        "answer": "no"
+      },
+      {
+        "question": "DOES HE BOWL THOSE FEROCIOUS PACE DELIVERIES?!",
+        "targetField": "isPaceBowler",
+        "answer": "no"
+      },
+      {
+        "question": "IS HE A MYSTERY SPIN MASTER?!",
+        "targetField": "isSpinBowler",
+        "answer": "yes"
+      },
+      {
+        "question": "DOES HE WEAR THE LEGENDARY ORANGE CAP?!",
+        "targetField": "hasOrangeCap",
+        "answer": "no"
+      },
+      {
+        "question": "HAS HE EVER CLAIMED THE PURPLE CAP FOR HIS DOMINANCE?!",
+        "targetField": "hasPurpleCap",
+        "answer": "no"
+      },
+      {
+        "question": "IS HE A PROVEN MATCH-FINISHER IN THE DEATH OVERS?!",
+        "targetField": "isFinisher",
+        "answer": "no"
+      }
+    ],
+    "aiGuess": "Harbhajan Singh",
+    "actualPlayer": "suresh raina",
+    "questionCount": 10
+  },
+  {
+    "timestamp": "2026-05-14T13:35:02.943Z",
+    "history": [
+      {
+        "question": "DOES HE BATTLE AS A WICKETKEEPER-BATSMAN?!",
+        "targetField": "isWicketkeeper",
+        "answer": "no"
+      },
+      {
+        "question": "HAS THIS TITAN EVER LIFTED THE IPL TROPHY?!",
+        "targetField": "hasWonIPLTitle",
+        "answer": "yes"
+      },
+      {
+        "question": "IS HE CURRENTLY TEARING IT UP IN THE ACTIVE ROSTER?!",
+        "targetField": "isActive",
+        "answer": "no"
+      },
+      {
+        "question": "HAS YOUR STAR EVER LED HIS TEAM TO AN IPL TITLE AS CAPTAIN?!",
+        "targetField": "hasLedTeamToTitle",
+        "answer": "no"
+      },
+      {
+        "question": "IS HE A DEVASTATING OVERSEAS POWER-HITTER?!",
+        "targetField": "isOverseas",
+        "answer": "no"
+      },
+      {
+        "question": "DOES HE BOWL THOSE FEROCIOUS PACE DELIVERIES?!",
+        "targetField": "isPaceBowler",
+        "answer": "no"
+      },
+      {
+        "question": "IS HE A MYSTERY SPIN MASTER?!",
+        "targetField": "isSpinBowler",
+        "answer": "yes"
+      },
+      {
+        "question": "DOES HE WEAR THE LEGENDARY ORANGE CAP?!",
+        "targetField": "hasOrangeCap",
+        "answer": "no"
+      },
+      {
+        "question": "HAS HE EVER CLAIMED THE PURPLE CAP FOR HIS DOMINANCE?!",
+        "targetField": "hasPurpleCap",
+        "answer": "no"
+      },
+      {
+        "question": "IS HE A PROVEN MATCH-FINISHER IN THE DEATH OVERS?!",
+        "targetField": "isFinisher",
+        "answer": "no"
+      }
+    ],
+    "aiGuess": "Harbhajan Singh",
+    "actualPlayer": "",
+    "questionCount": 10
+  },
+  {
+    "timestamp": "2026-05-14T14:17:05.099Z",
+    "history": [
+      {
+        "question": "DOES HE BATTLE AS A WICKETKEEPER-BATSMAN?!",
+        "targetField": "isWicketkeeper",
+        "answer": "no"
+      },
+      {
+        "question": "HAS THIS TITAN EVER LIFTED THE IPL TROPHY?!",
+        "targetField": "hasWonIPLTitle",
+        "answer": "yes"
+      },
+      {
+        "question": "IS HE CURRENTLY TEARING IT UP IN THE ACTIVE ROSTER?!",
+        "targetField": "isActive",
+        "answer": "yes"
+      },
+      {
+        "question": "HAS YOUR STAR EVER LED HIS TEAM TO AN IPL TITLE AS CAPTAIN?!",
+        "targetField": "hasLedTeamToTitle",
+        "answer": "no"
+      },
+      {
+        "question": "IS HE A DEVASTATING OVERSEAS POWER-HITTER?!",
+        "targetField": "isOverseas",
+        "answer": "yes"
+      },
+      {
+        "question": "DOES HE BOWL THOSE FEROCIOUS PACE DELIVERIES?!",
+        "targetField": "isPaceBowler",
+        "answer": "yes"
+      },
+      {
+        "question": "IS HE A MYSTERY SPIN MASTER?!",
+        "targetField": "isSpinBowler",
+        "answer": "no"
+      },
+      {
+        "question": "DOES HE WEAR THE LEGENDARY ORANGE CAP?!",
+        "targetField": "hasOrangeCap",
+        "answer": "no"
+      },
+      {
+        "question": "HAS HE EVER CLAIMED THE PURPLE CAP FOR HIS DOMINANCE?!",
+        "targetField": "hasPurpleCap",
+        "answer": "no"
+      },
+      {
+        "question": "IS HE A PROVEN MATCH-FINISHER IN THE DEATH OVERS?!",
+        "targetField": "isFinisher",
+        "answer": "yes"
+      },
+      {
+        "question": "DOES HE BAT IN THE TOP-ORDER POWERPLAY?!",
+        "targetField": "powerplayBatter",
+        "answer": "no"
+      }
+    ],
+    "aiGuess": "Andre Russell",
+    "actualPlayer": "sam curran",
+    "questionCount": 11
+  },
+  {
+    "timestamp": "2026-05-14T14:17:47.438Z",
+    "history": [
+      {
+        "question": "DOES HE BATTLE AS A WICKETKEEPER-BATSMAN?!",
+        "targetField": "isWicketkeeper",
+        "answer": "no"
+      },
+      {
+        "question": "HAS THIS TITAN EVER LIFTED THE IPL TROPHY?!",
+        "targetField": "hasWonIPLTitle",
+        "answer": "yes"
+      },
+      {
+        "question": "IS HE CURRENTLY TEARING IT UP IN THE ACTIVE ROSTER?!",
+        "targetField": "isActive",
+        "answer": "yes"
+      },
+      {
+        "question": "HAS YOUR STAR EVER LED HIS TEAM TO AN IPL TITLE AS CAPTAIN?!",
+        "targetField": "hasLedTeamToTitle",
+        "answer": "no"
+      },
+      {
+        "question": "IS HE A DEVASTATING OVERSEAS POWER-HITTER?!",
+        "targetField": "isOverseas",
+        "answer": "yes"
+      },
+      {
+        "question": "DOES HE BOWL THOSE FEROCIOUS PACE DELIVERIES?!",
+        "targetField": "isPaceBowler",
+        "answer": "yes"
+      },
+      {
+        "question": "IS HE A MYSTERY SPIN MASTER?!",
+        "targetField": "isSpinBowler",
+        "answer": "no"
+      },
+      {
+        "question": "DOES HE WEAR THE LEGENDARY ORANGE CAP?!",
+        "targetField": "hasOrangeCap",
+        "answer": "no"
+      },
+      {
+        "question": "HAS HE EVER CLAIMED THE PURPLE CAP FOR HIS DOMINANCE?!",
+        "targetField": "hasPurpleCap",
+        "answer": "no"
+      },
+      {
+        "question": "IS HE A PROVEN MATCH-FINISHER IN THE DEATH OVERS?!",
+        "targetField": "isFinisher",
+        "answer": "yes"
+      },
+      {
+        "question": "DOES HE BAT IN THE TOP-ORDER POWERPLAY?!",
+        "targetField": "powerplayBatter",
+        "answer": "no"
+      }
+    ],
+    "aiGuess": "Andre Russell",
+    "actualPlayer": "Sam Curran",
+    "questionCount": 11
+  },
+  {
+    "timestamp": "2026-05-14T14:36:46.404Z",
+    "history": [
+      {
+        "question": "DOES HE BATTLE AS A WICKETKEEPER-BATSMAN?!",
+        "targetField": "isWicketkeeper",
+        "answer": "no"
+      },
+      {
+        "question": "HAS THIS TITAN EVER LIFTED THE IPL TROPHY?!",
+        "targetField": "hasWonIPLTitle",
+        "answer": "yes"
+      },
+      {
+        "question": "IS HE CURRENTLY TEARING IT UP IN THE ACTIVE ROSTER?!",
+        "targetField": "isActive",
+        "answer": "yes"
+      },
+      {
+        "question": "HAS YOUR STAR EVER LED HIS TEAM TO AN IPL TITLE AS CAPTAIN?!",
+        "targetField": "hasLedTeamToTitle",
+        "answer": "no"
+      },
+      {
+        "question": "IS HE A DEVASTATING OVERSEAS POWER-HITTER?!",
+        "targetField": "isOverseas",
+        "answer": "no"
+      },
+      {
+        "question": "DOES HE BOWL THOSE FEROCIOUS PACE DELIVERIES?!",
+        "targetField": "isPaceBowler",
+        "answer": "no"
+      },
+      {
+        "question": "IS HE A MYSTERY SPIN MASTER?!",
+        "targetField": "isSpinBowler",
+        "answer": "yes"
+      },
+      {
+        "question": "DOES HE WEAR THE LEGENDARY ORANGE CAP?!",
+        "targetField": "hasOrangeCap",
+        "answer": "no"
+      },
+      {
+        "question": "HAS HE EVER CLAIMED THE PURPLE CAP FOR HIS DOMINANCE?!",
+        "targetField": "hasPurpleCap",
+        "answer": "no"
+      },
+      {
+        "question": "IS HE A PROVEN MATCH-FINISHER IN THE DEATH OVERS?!",
+        "targetField": "isFinisher",
+        "answer": "yes"
+      },
+      {
+        "question": "DOES HE BAT IN THE TOP-ORDER POWERPLAY?!",
+        "targetField": "powerplayBatter",
+        "answer": "no"
+      },
+      {
+        "question": "IS YOUR PLAYER AN ELITE ALL-ROUNDER?!",
+        "targetField": "isAllRounder",
+        "answer": "yes"
+      }
+    ],
+    "aiGuess": "Ravindra Jadeja",
+    "actualPlayer": "Axar Patel",
+    "questionCount": 12
+  }
+]
