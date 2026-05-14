@@ -14,7 +14,7 @@ export async function POST(req: Request) {
       questionCount: history?.length || 0
     };
 
-    const dataDir = path.join(process.cwd(), 'src/data');
+    const dataDir = path.join(process.cwd(), 'data');
     const filePath = path.join(dataDir, 'feedback.json');
 
     // Ensure the data directory exists
