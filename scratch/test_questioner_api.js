@@ -1,5 +1,20 @@
-import { NextResponse } from 'next/server';
-import { callAI } from '@/lib/ai';
+const OpenAI = require('openai');
+const fs = require('fs');
+const path = require('path');
+
+let apiKey = "";
+try {
+  const envContent = fs.readFileSync(path.join(__dirname, '../.env.local'), 'utf8');
+  const match = envContent.match(/OPENROUTER_API_KEY=(.*)/);
+  if (match) apiKey = match[1].trim();
+} catch (e) {
+  console.error("Could not read .env.local:", e.message);
+}
+
+const openrouter = new OpenAI({
+  baseURL: 'https://openrouter.ai/api/v1',
+  apiKey: apiKey,
+});
 
 const COMPACT_2026_REF = `
 IPL 2026 Captains & Key Roster Alignments (Ground Truth):
@@ -27,15 +42,6 @@ ${COMPACT_2026_REF}
 Your mission:
 Formulate the single best Yes/No question to split the current player suspects as close to 50/50 as possible.
 
-CRITICAL YES/NO GRAMMATICAL CONSTRAINT:
-1. Every question you generate MUST be a strict Yes/No question.
-2. It MUST be easily and logically answerable with "YES", "NO", or "MAYBE".
-3. It MUST start with a helper verb (e.g., "IS HE...", "DOES HE...", "HAS HE...", "DID YOUR STAR...", "WAS THIS TITAN...", "IS YOUR MYSTERY STAR...").
-4. It MUST NEVER be open-ended, descriptive, or multiple choice.
-   - INCORRECT: "Which team does he play for?" or "How many centuries does he have?"
-   - CORRECT: "DOES HE PLAY FOR THE MIGHTY RCB?!", "HAS HE SMASHED MORE THAN THREE CENTURIES?!"
-5. Any violation of this Yes/No constraint will break the gameplay, so be extremely strict.
-
 CRITICAL DYNAMIC RULES:
 1. DO NOT follow a rigid sequence of questions (e.g., do not always ask about Indian/Overseas or Wicketkeeper first).
 2. ANALYZE the previous questions AND answers in the Q&A history to understand what has already been established. Build directly on top of previous responses! For example:
@@ -54,56 +60,28 @@ Return ONLY this exact JSON format:
 }
 `;
 
-// Random opening angles — injected on Q1 to prevent the AI from always asking the same first question
-const OPENING_ANGLES = [
-  "Start by asking about NATIONALITY (Indian vs Overseas).",
-  "Start by asking about ROLE (batsman, bowler, all-rounder, or wicketkeeper).",
-  "Start by asking about BOWLING STYLE (pace vs spin).",
-  "Start by asking about BATTING STYLE (right-handed vs left-handed).",
-  "Start by asking about TEAM (which IPL franchise they play for).",
-  "Start by asking about IPL TITLES (whether they have won the IPL trophy).",
-  "Start by asking about BATTING POSITION (opener vs middle-order vs finisher).",
-  "Start by asking about AGE / ERA (veteran legend vs current youngster).",
-  "Start by asking about CAPTAINCY (whether they have captained an IPL team).",
-  "Start by asking about INTERNATIONAL CAREER (whether they play international cricket).",
-];
-
-export async function POST(req: Request) {
+async function main() {
+  console.log("Running Questioner LLM test call...");
   try {
-    const { remainingPlayers, history, questionNumber } = await req.json();
-
-    console.log(`Questioner API: Q${questionNumber}. Candidates: ${JSON.stringify(remainingPlayers)}. History size: ${history?.length || 0}`);
-
-    // Pick a random opening angle for Q1 to prevent repetition across game sessions
-    const openingHint = questionNumber === 1
-      ? `\n\nOPENING ANGLE FOR THIS GAME: ${OPENING_ANGLES[Math.floor(Math.random() * OPENING_ANGLES.length)]}`
-      : '';
-
-    try {
-      const content = await callAI(
-        SYSTEM_PROMPT + openingHint,
-        JSON.stringify({ 
-          remainingPlayers: remainingPlayers || [], 
-          history: history || [], 
-          questionNumber 
-        })
-      );
-      if (content) {
-        return NextResponse.json(JSON.parse(content));
-      }
-    } catch (llmError) {
-      console.error('LLM Questioner Error:', llmError);
-    }
-
-    // Fallback if LLM fails — also randomize fallback to avoid repetition
-    const fallbackIndex = questionNumber === 1
-      ? Math.floor(Math.random() * FALLBACK_QUESTIONS.length)
-      : questionNumber % FALLBACK_QUESTIONS.length;
-    return NextResponse.json(FALLBACK_QUESTIONS[fallbackIndex]);
-
-  } catch (error) {
-    console.error('Critical Questioner Error:', error);
-    const randomFallback = FALLBACK_QUESTIONS[Math.floor(Math.random() * FALLBACK_QUESTIONS.length)];
-    return NextResponse.json(randomFallback);
+    const response = await openrouter.chat.completions.create({
+      model: 'deepseek/deepseek-v4-flash:free',
+      messages: [
+        { role: 'system', content: SYSTEM_PROMPT },
+        { 
+          role: 'user', 
+          content: JSON.stringify({ 
+            remainingPlayers: [], 
+            history: [], 
+            questionNumber: 1 
+          }) 
+        }
+      ],
+      response_format: { type: 'json_object' }
+    });
+    console.log("Full response object:", JSON.stringify(response, null, 2));
+  } catch (err) {
+    console.error("FAILED! Error details:", err);
   }
 }
+
+main();

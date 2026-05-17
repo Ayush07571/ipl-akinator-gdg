@@ -308,5 +308,194 @@
     "aiGuess": "Ravindra Jadeja",
     "actualPlayer": "Axar Patel",
     "questionCount": 12
+  },
+  {
+    "timestamp": "2026-05-17T07:18:22.246Z",
+    "history": [
+      {
+        "question": "DOES HE BATTLE AS A WICKETKEEPER-BATSMAN?!",
+        "targetField": "isWicketkeeper",
+        "answer": "no"
+      },
+      {
+        "question": "HAS THIS TITAN EVER LIFTED THE IPL TROPHY?!",
+        "targetField": "hasWonIPLTitle",
+        "answer": "yes"
+      },
+      {
+        "question": "IS HE CURRENTLY TEARING IT UP IN THE ACTIVE 2026 ROSTER?!",
+        "targetField": "isActive",
+        "answer": "yes"
+      },
+      {
+        "question": "HAS YOUR STAR EVER LED HIS TEAM TO AN IPL TITLE AS CAPTAIN?!",
+        "targetField": "hasLedTeamToTitle",
+        "answer": "no"
+      },
+      {
+        "question": "IS HE A DEVASTATING OVERSEAS POWER-HITTER?!",
+        "targetField": "isOverseas",
+        "answer": "no"
+      },
+      {
+        "question": "DOES HE BOWL THOSE FEROCIOUS PACE DELIVERIES?!",
+        "targetField": "isPaceBowler",
+        "answer": "maybe"
+      },
+      {
+        "question": "IS HE A MYSTERY SPIN MASTER?!",
+        "targetField": "isSpinBowler",
+        "answer": "dont_know"
+      },
+      {
+        "question": "DOES HE WEAR THE LEGENDARY ORANGE CAP?!",
+        "targetField": "hasOrangeCap",
+        "answer": "yes"
+      },
+      {
+        "question": "HAS HE EVER CLAIMED THE PURPLE CAP FOR HIS DOMINANCE?!",
+        "targetField": "hasPurpleCap",
+        "answer": "no"
+      },
+      {
+        "question": "IS HE A PROVEN MATCH-FINISHER IN THE DEATH OVERS?!",
+        "targetField": "isFinisher",
+        "answer": "no"
+      },
+      {
+        "question": "DOES HE BAT IN THE TOP-ORDER POWERPLAY?!",
+        "targetField": "powerplayBatter",
+        "answer": "yes"
+      },
+      {
+        "question": "IS YOUR PLAYER AN ELITE ALL-ROUNDER?!",
+        "targetField": "isAllRounder",
+        "answer": "no"
+      }
+    ],
+    "aiGuess": "Virat Kohli",
+    "actualPlayer": "Ruturaj Gaikwad",
+    "questionCount": 12
+  },
+  {
+    "timestamp": "2026-05-17T08:06:09.771Z",
+    "history": [
+      {
+        "question": "Ladies and gentlemen, the moment of truth has arrived! Let's get this high-octane encounter underway! With the sheer international flair and global prowess often gracing our league, IS YOUR MYSTERY STAR AN OVERSEAS PLAYER?!",
+        "targetField": "isOverseasPlayer",
+        "answer": "no"
+      },
+      {
+        "question": "Ladies and gentlemen, the suspense is building like a last-over thriller! With the weight of expectations and the thrill of leadership, HAS YOUR MYSTERY STAR SHOULDERED THE IMMENSE RESPONSIBILITY OF CAPTAINING AN IPL FRANCHISE IN THE GLORIOUS 2026 SEASON?!",
+        "targetField": "isCaptain",
+        "answer": "no"
+      },
+      {
+        "question": "The tension is palpable, ladies and gentlemen! This game, just like a high-stakes Super Over, demands precision! IS YOUR MYSTERY STAR RECOGNIZED FIRST AND FOREMOST FOR HIS EXPLOSIVE BATTING PROWESS, RATHER THAN HIS BOWLING OR WICKETKEEPING SKILLS?!",
+        "targetField": "isSpecialistBatsman",
+        "answer": "maybe"
+      },
+      {
+        "question": "Ladies and gentlemen, the stakes are rising like a perfectly executed maximum! With careers that span years and tales etched in IPL history, HAS YOUR MYSTERY STAR GRACED THE IPL STAGE FOR EIGHT OR MORE GLORIOUS SEASONS, INCLUDING THIS THRILLING 2026 EDITION?!",
+        "targetField": "hasPlayed8PlusSeasons",
+        "answer": "yes"
+      },
+      {
+        "question": "IS HE A DEVASTATING OVERSEAS POWER-HITTER?!",
+        "targetField": "isOverseas",
+        "answer": "no"
+      },
+      {
+        "question": "DOES HE BOWL THOSE FEROCIOUS PACE DELIVERIES?!",
+        "targetField": "isPaceBowler",
+        "answer": "no"
+      },
+      {
+        "question": "IS HE A MYSTERY SPIN MASTER?!",
+        "targetField": "isSpinBowler",
+        "answer": "no"
+      },
+      {
+        "question": "IS YOUR MYSTERY STAR AN INDIAN NATIONAL?!",
+        "targetField": "isIndian",
+        "answer": "yes"
+      },
+      {
+        "question": "DOES HE BATTLE AS A WICKETKEEPER-BATSMAN?!",
+        "targetField": "isWicketkeeper",
+        "answer": "no"
+      },
+      {
+        "question": "HAS THIS TITAN EVER LIFTED THE IPL TROPHY?!",
+        "targetField": "hasWonIPLTitle",
+        "answer": "yes"
+      },
+      {
+        "question": "IS HE CURRENTLY TEARING IT UP IN THE ACTIVE 2026 ROSTER?!",
+        "targetField": "isActive",
+        "answer": "yes"
+      },
+      {
+        "question": "HAS YOUR STAR EVER LED HIS TEAM TO AN IPL TITLE AS CAPTAIN?!",
+        "targetField": "hasLedTeamToTitle",
+        "answer": "yes"
+      }
+    ],
+    "aiGuess": "Rohit Sharma",
+    "actualPlayer": "Virat Kohli",
+    "questionCount": 12
+  },
+  {
+    "timestamp": "2026-05-17T08:34:58.719Z",
+    "history": [
+      {
+        "question": "IS HE A PLAYER WHO REGULARLY FEATURES IN THE TOP 4 OF HIS TEAM'S BATTING ORDER, SETTING THE TONE WITH BOLD STROKES AND EXPLOSIVE STARTS?!",
+        "targetField": "isTop4Batsman",
+        "answer": "yes"
+      },
+      {
+        "question": "IS HE THE FEARLESS LEADER WHO GUIDES HIS TROOPS AS CAPTAIN OF AN IPL FRANCHISE, TAKING CHARGE WITH A BOLD STRATEGY?!",
+        "targetField": "isCaptain",
+        "answer": "no"
+      },
+      {
+        "question": "IS HE CURRENTLY TEARING IT UP IN THE ACTIVE 2026 ROSTER?!",
+        "targetField": "isActive",
+        "answer": "yes"
+      },
+      {
+        "question": "DOES YOUR MYSTERY MAN UNLEASH HIS FURY FROM THE LEFT-HANDED STANCE, SCORING BOUNDARIES WITH EFFORTLESS GRACE AND RAW POWER?!",
+        "targetField": "isLeftHandedBatsman",
+        "answer": "no"
+      },
+      {
+        "question": "IS YOUR MYSTERY MAN AN INTERNATIONAL OVERSEAS SENSATION, BRINGING HIS GLOBAL FLAIR AND POWER TO THE IPL STAGE?!",
+        "targetField": "isOverseas",
+        "answer": "no"
+      },
+      {
+        "question": "IS YOUR MYSTERY MAN AN INTEGRAL PART OF A FRANCHISE BASED IN THE GLITTERING GLOBAL METROPOLITAN CITIES OF INDIA – MUMBAI, DELHI, OR BENGALURU?!",
+        "targetField": "playsForMetroCityTeam",
+        "answer": "yes"
+      },
+      {
+        "question": "IS YOUR MYSTERY MAN A VITAL COG IN THE BLUE AND GOLD MACHINE OF THE MUMBAI INDIANS, BRINGING HIS FIREPOWER TO THE ICONIC WANKHEDE STADIUM?!",
+        "targetField": "playsForMI",
+        "answer": "no"
+      },
+      {
+        "question": "IS YOUR MYSTERY STAR AN INDIAN NATIONAL?!",
+        "targetField": "isIndian",
+        "answer": "yes"
+      },
+      {
+        "question": "DOES HE BATTLE AS A WICKETKEEPER-BATSMAN?!",
+        "targetField": "isWicketkeeper",
+        "answer": "no"
+      }
+    ],
+    "aiGuess": "Rajat Patidar",
+    "actualPlayer": "virat kohli",
+    "questionCount": 9
   }
 ]

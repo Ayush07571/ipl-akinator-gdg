@@ -7,7 +7,10 @@
     "role": "Wicketkeeper-Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "None",
-    "primaryTeams": ["CSK", "Rising Pune Supergiant"],
+    "primaryTeams": [
+      "CSK",
+      "Rising Pune Supergiant"
+    ],
     "currentTeam": "CSK",
     "isActive": true,
     "isCaptain": true,
@@ -32,7 +35,12 @@
     "ageBracket": "veteran",
     "battingTier": "finisher",
     "bowlingTier": "none",
-    "famousFor": ["helicopter shot", "finishing", "captaincy", "keeping"]
+    "famousFor": [
+      "helicopter shot",
+      "finishing",
+      "captaincy",
+      "keeping"
+    ]
   },
   {
     "id": 2,
@@ -42,7 +50,9 @@
     "role": "Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["Mumbai Indians"],
+    "primaryTeams": [
+      "Mumbai Indians"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -67,7 +77,12 @@
     "ageBracket": "veteran",
     "battingTier": "elite",
     "bowlingTier": "none",
-    "famousFor": ["straight drive", "god of cricket", "captaincy", "consistency"]
+    "famousFor": [
+      "straight drive",
+      "god of cricket",
+      "captaincy",
+      "consistency"
+    ]
   },
   {
     "id": 3,
@@ -77,7 +92,13 @@
     "role": "All-rounder",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Slow left-arm orthodox",
-    "primaryTeams": ["Kings XI Punjab", "Pune Warriors", "RCB", "SRH", "Mumbai Indians"],
+    "primaryTeams": [
+      "Kings XI Punjab",
+      "Pune Warriors",
+      "RCB",
+      "SRH",
+      "Mumbai Indians"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -102,7 +123,12 @@
     "ageBracket": "veteran",
     "battingTier": "power-hitter",
     "bowlingTier": "part-time",
-    "famousFor": ["6 sixes", "left-hand elegance", "all-round skills", "match winner"]
+    "famousFor": [
+      "6 sixes",
+      "left-hand elegance",
+      "all-round skills",
+      "match winner"
+    ]
   },
   {
     "id": 4,
@@ -112,7 +138,10 @@
     "role": "Batsman",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm medium",
-    "primaryTeams": ["KKR", "Pune Warriors India"],
+    "primaryTeams": [
+      "KKR",
+      "Pune Warriors India"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -137,7 +166,12 @@
     "ageBracket": "veteran",
     "battingTier": "middle",
     "bowlingTier": "none",
-    "famousFor": ["captaincy", "off-side play", "dadagiri", "leadership"]
+    "famousFor": [
+      "captaincy",
+      "off-side play",
+      "dadagiri",
+      "leadership"
+    ]
   },
   {
     "id": 5,
@@ -147,7 +181,10 @@
     "role": "Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["RCB", "Rajasthan Royals"],
+    "primaryTeams": [
+      "RCB",
+      "Rajasthan Royals"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -172,7 +209,12 @@
     "ageBracket": "veteran",
     "battingTier": "technical",
     "bowlingTier": "none",
-    "famousFor": ["the wall", "technique", "captaincy", "fair play"]
+    "famousFor": [
+      "the wall",
+      "technique",
+      "captaincy",
+      "fair play"
+    ]
   },
   {
     "id": 6,
@@ -182,7 +224,10 @@
     "role": "Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["Deccan Chargers", "Kochi Tuskers Kerala"],
+    "primaryTeams": [
+      "Deccan Chargers",
+      "Kochi Tuskers Kerala"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -207,7 +252,12 @@
     "ageBracket": "veteran",
     "battingTier": "technical",
     "bowlingTier": "none",
-    "famousFor": ["wristy play", "elegance", "test match great", "captaincy"]
+    "famousFor": [
+      "wristy play",
+      "elegance",
+      "test match great",
+      "captaincy"
+    ]
   },
   {
     "id": 7,
@@ -217,7 +267,10 @@
     "role": "Wicketkeeper-Batsman",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["Deccan Chargers", "Kings XI Punjab"],
+    "primaryTeams": [
+      "Deccan Chargers",
+      "Kings XI Punjab"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -242,7 +295,12 @@
     "ageBracket": "veteran",
     "battingTier": "power-hitter",
     "bowlingTier": "none",
-    "famousFor": ["aggressive batting", "keeping", "captaincy", "2009 title"]
+    "famousFor": [
+      "aggressive batting",
+      "keeping",
+      "captaincy",
+      "2009 title"
+    ]
   },
   {
     "id": 8,
@@ -252,7 +310,10 @@
     "role": "Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm medium",
-    "primaryTeams": ["KKR", "Mumbai Indians"],
+    "primaryTeams": [
+      "KKR",
+      "Mumbai Indians"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -277,7 +338,12 @@
     "ageBracket": "veteran",
     "battingTier": "elite",
     "bowlingTier": "none",
-    "famousFor": ["pull shot", "captaincy", "leadership", "world cup winner"]
+    "famousFor": [
+      "pull shot",
+      "captaincy",
+      "leadership",
+      "world cup winner"
+    ]
   },
   {
     "id": 9,
@@ -287,10 +353,12 @@
     "role": "Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm medium",
-    "primaryTeams": ["RCB"],
+    "primaryTeams": [
+      "RCB"
+    ],
     "currentTeam": "RCB",
     "isActive": true,
-    "isCaptain": false,
+    "isCaptain": true,
     "hasWonIPLTitle": true,
     "titlesWon": 1,
     "isWicketkeeper": false,
@@ -312,7 +380,12 @@
     "ageBracket": "veteran",
     "battingTier": "elite",
     "bowlingTier": "none",
-    "famousFor": ["cover drive", "consistency", "aggression", "2025 champion"]
+    "famousFor": [
+      "cover drive",
+      "consistency",
+      "aggression",
+      "2025 champion"
+    ]
   },
   {
     "id": 10,
@@ -322,8 +395,11 @@
     "role": "Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["Deccan Chargers", "Mumbai Indians"],
-    "currentTeam": "Mumbai Indians",
+    "primaryTeams": [
+      "Deccan Chargers",
+      "Mumbai Indians"
+    ],
+    "currentTeam": "MI",
     "isActive": true,
     "isCaptain": false,
     "hasWonIPLTitle": true,
@@ -347,7 +423,12 @@
     "ageBracket": "veteran",
     "battingTier": "elite",
     "bowlingTier": "none",
-    "famousFor": ["pull shot", "captaincy", "hitman", "five titles"]
+    "famousFor": [
+      "pull shot",
+      "captaincy",
+      "hitman",
+      "five titles"
+    ]
   },
   {
     "id": 11,
@@ -357,8 +438,13 @@
     "role": "Wicketkeeper-Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "None",
-    "primaryTeams": ["RCB", "SRH", "Punjab Kings", "LSG"],
-    "currentTeam": "LSG",
+    "primaryTeams": [
+      "RCB",
+      "SRH",
+      "Punjab Kings",
+      "LSG"
+    ],
+    "currentTeam": "DC",
     "isActive": true,
     "isCaptain": true,
     "hasWonIPLTitle": false,
@@ -382,7 +468,12 @@
     "ageBracket": "senior",
     "battingTier": "technical",
     "bowlingTier": "none",
-    "famousFor": ["classy shots", "versatility", "captaincy", "consistency"]
+    "famousFor": [
+      "classy shots",
+      "versatility",
+      "captaincy",
+      "consistency"
+    ]
   },
   {
     "id": 12,
@@ -392,8 +483,11 @@
     "role": "All-rounder",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm fast-medium",
-    "primaryTeams": ["Mumbai Indians", "Gujarat Titans"],
-    "currentTeam": "Mumbai Indians",
+    "primaryTeams": [
+      "Mumbai Indians",
+      "Gujarat Titans"
+    ],
+    "currentTeam": "MI",
     "isActive": true,
     "isCaptain": true,
     "hasWonIPLTitle": true,
@@ -417,7 +511,12 @@
     "ageBracket": "senior",
     "battingTier": "power-hitter",
     "bowlingTier": "strike-bowler",
-    "famousFor": ["all-round skills", "finishing", "captaincy", "power"]
+    "famousFor": [
+      "all-round skills",
+      "finishing",
+      "captaincy",
+      "power"
+    ]
   },
   {
     "id": 13,
@@ -427,8 +526,10 @@
     "role": "Bowler",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm fast",
-    "primaryTeams": ["Mumbai Indians"],
-    "currentTeam": "Mumbai Indians",
+    "primaryTeams": [
+      "Mumbai Indians"
+    ],
+    "currentTeam": "MI",
     "isActive": true,
     "isCaptain": false,
     "hasWonIPLTitle": true,
@@ -452,7 +553,12 @@
     "ageBracket": "senior",
     "battingTier": "none",
     "bowlingTier": "elite",
-    "famousFor": ["yorkers", "weird action", "death bowling", "consistency"]
+    "famousFor": [
+      "yorkers",
+      "weird action",
+      "death bowling",
+      "consistency"
+    ]
   },
   {
     "id": 14,
@@ -462,7 +568,12 @@
     "role": "All-rounder",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Slow left-arm orthodox",
-    "primaryTeams": ["Rajasthan Royals", "Kochi Tuskers Kerala", "CSK", "Gujarat Lions"],
+    "primaryTeams": [
+      "Rajasthan Royals",
+      "Kochi Tuskers Kerala",
+      "CSK",
+      "Gujarat Lions"
+    ],
     "currentTeam": "CSK",
     "isActive": true,
     "isCaptain": false,
@@ -487,7 +598,12 @@
     "ageBracket": "veteran",
     "battingTier": "finisher",
     "bowlingTier": "economy",
-    "famousFor": ["fielding", "quick overs", "finishing", "sir jadeja"]
+    "famousFor": [
+      "fielding",
+      "quick overs",
+      "finishing",
+      "sir jadeja"
+    ]
   },
   {
     "id": 15,
@@ -497,7 +613,10 @@
     "role": "Batsman",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["CSK", "Gujarat Lions"],
+    "primaryTeams": [
+      "CSK",
+      "Gujarat Lions"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -522,7 +641,12 @@
     "ageBracket": "veteran",
     "battingTier": "power-hitter",
     "bowlingTier": "part-time",
-    "famousFor": ["mr. ipl", "inside out shot", "fielding", "consistency"]
+    "famousFor": [
+      "mr. ipl",
+      "inside out shot",
+      "fielding",
+      "consistency"
+    ]
   },
   {
     "id": 16,
@@ -532,8 +656,14 @@
     "role": "Batsman",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["Delhi Capitals", "Mumbai Indians", "Deccan Chargers", "SRH", "Punjab Kings"],
-    "currentTeam": "Punjab Kings",
+    "primaryTeams": [
+      "Delhi Capitals",
+      "Mumbai Indians",
+      "Deccan Chargers",
+      "SRH",
+      "Punjab Kings"
+    ],
+    "currentTeam": "PBKS",
     "isActive": true,
     "isCaptain": true,
     "hasWonIPLTitle": true,
@@ -557,7 +687,12 @@
     "ageBracket": "veteran",
     "battingTier": "elite",
     "bowlingTier": "none",
-    "famousFor": ["gabbar", "thigh slap", "consistency", "opening"]
+    "famousFor": [
+      "gabbar",
+      "thigh slap",
+      "consistency",
+      "opening"
+    ]
   },
   {
     "id": 17,
@@ -567,7 +702,11 @@
     "role": "All-rounder",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["Rajasthan Royals", "KKR", "SRH"],
+    "primaryTeams": [
+      "Rajasthan Royals",
+      "KKR",
+      "SRH"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -592,7 +731,12 @@
     "ageBracket": "veteran",
     "battingTier": "power-hitter",
     "bowlingTier": "economy",
-    "famousFor": ["fastest hundred", "power hitting", "off-spin", "clutch player"]
+    "famousFor": [
+      "fastest hundred",
+      "power hitting",
+      "off-spin",
+      "clutch player"
+    ]
   },
   {
     "id": 18,
@@ -602,7 +746,14 @@
     "role": "All-rounder",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Left-arm medium-fast",
-    "primaryTeams": ["Kings XI Punjab", "Delhi Capitals", "SRH", "CSK", "RPS", "Gujarat Lions"],
+    "primaryTeams": [
+      "Kings XI Punjab",
+      "Delhi Capitals",
+      "SRH",
+      "CSK",
+      "RPS",
+      "Gujarat Lions"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -627,7 +778,12 @@
     "ageBracket": "veteran",
     "battingTier": "middle",
     "bowlingTier": "swing",
-    "famousFor": ["swing", "all-round", "hat-trick", "commentary"]
+    "famousFor": [
+      "swing",
+      "all-round",
+      "hat-trick",
+      "commentary"
+    ]
   },
   {
     "id": 19,
@@ -637,7 +793,10 @@
     "role": "Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["Mumbai Indians", "CSK"],
+    "primaryTeams": [
+      "Mumbai Indians",
+      "CSK"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -662,7 +821,12 @@
     "ageBracket": "veteran",
     "battingTier": "technical",
     "bowlingTier": "none",
-    "famousFor": ["clutch innings", "consistency", "versatility", "six titles"]
+    "famousFor": [
+      "clutch innings",
+      "consistency",
+      "versatility",
+      "six titles"
+    ]
   },
   {
     "id": 20,
@@ -672,7 +836,14 @@
     "role": "Wicketkeeper-Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["Delhi Capitals", "Kings XI Punjab", "Mumbai Indians", "GL", "KKR", "RCB"],
+    "primaryTeams": [
+      "Delhi Capitals",
+      "Kings XI Punjab",
+      "Mumbai Indians",
+      "GL",
+      "KKR",
+      "RCB"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -697,7 +868,12 @@
     "ageBracket": "veteran",
     "battingTier": "finisher",
     "bowlingTier": "none",
-    "famousFor": ["finishing", "keeping", "longevity", "commentary"]
+    "famousFor": [
+      "finishing",
+      "keeping",
+      "longevity",
+      "commentary"
+    ]
   },
   {
     "id": 21,
@@ -707,8 +883,10 @@
     "role": "Wicketkeeper-Batsman",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "None",
-    "primaryTeams": ["Delhi Capitals"],
-    "currentTeam": "Delhi Capitals",
+    "primaryTeams": [
+      "Delhi Capitals"
+    ],
+    "currentTeam": "DC",
     "isActive": true,
     "isCaptain": true,
     "hasWonIPLTitle": false,
@@ -732,7 +910,12 @@
     "ageBracket": "young-adult",
     "battingTier": "power-hitter",
     "bowlingTier": "none",
-    "famousFor": ["one-handed six", "aggression", "keeping", "captaincy"]
+    "famousFor": [
+      "one-handed six",
+      "aggression",
+      "keeping",
+      "captaincy"
+    ]
   },
   {
     "id": 22,
@@ -742,7 +925,10 @@
     "role": "Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm legbreak",
-    "primaryTeams": ["Delhi Capitals", "KKR"],
+    "primaryTeams": [
+      "Delhi Capitals",
+      "KKR"
+    ],
     "currentTeam": "KKR",
     "isActive": true,
     "isCaptain": true,
@@ -767,7 +953,12 @@
     "ageBracket": "senior",
     "battingTier": "technical",
     "bowlingTier": "none",
-    "famousFor": ["captaincy", "spin-hitting", "consistency", "leadership"]
+    "famousFor": [
+      "captaincy",
+      "spin-hitting",
+      "consistency",
+      "leadership"
+    ]
   },
   {
     "id": 23,
@@ -777,7 +968,10 @@
     "role": "Bowler",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm medium",
-    "primaryTeams": ["Rising Pune Supergiant", "CSK"],
+    "primaryTeams": [
+      "Rising Pune Supergiant",
+      "CSK"
+    ],
     "currentTeam": "CSK",
     "isActive": true,
     "isCaptain": false,
@@ -802,7 +996,12 @@
     "ageBracket": "senior",
     "battingTier": "none",
     "bowlingTier": "swing",
-    "famousFor": ["powerplay wickets", "swing", "CSK regular", "useful bat"]
+    "famousFor": [
+      "powerplay wickets",
+      "swing",
+      "CSK regular",
+      "useful bat"
+    ]
   },
   {
     "id": 24,
@@ -812,8 +1011,13 @@
     "role": "Bowler",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm fast-medium",
-    "primaryTeams": ["KKR", "Delhi Capitals", "Punjab Kings", "Gujarat Titans"],
-    "currentTeam": "Gujarat Titans",
+    "primaryTeams": [
+      "KKR",
+      "Delhi Capitals",
+      "Punjab Kings",
+      "Gujarat Titans"
+    ],
+    "currentTeam": "GT",
     "isActive": true,
     "isCaptain": false,
     "hasWonIPLTitle": true,
@@ -837,7 +1041,12 @@
     "ageBracket": "veteran",
     "battingTier": "none",
     "bowlingTier": "elite",
-    "famousFor": ["seam position", "powerplay wickets", "pace", "consistency"]
+    "famousFor": [
+      "seam position",
+      "powerplay wickets",
+      "pace",
+      "consistency"
+    ]
   },
   {
     "id": 25,
@@ -847,7 +1056,10 @@
     "role": "Bowler",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm medium",
-    "primaryTeams": ["Pune Warriors India", "SRH"],
+    "primaryTeams": [
+      "Pune Warriors India",
+      "SRH"
+    ],
     "currentTeam": "SRH",
     "isActive": true,
     "isCaptain": false,
@@ -872,7 +1084,12 @@
     "ageBracket": "veteran",
     "battingTier": "none",
     "bowlingTier": "swing",
-    "famousFor": ["swing", "purple cap", "economy", "knuckle ball"]
+    "famousFor": [
+      "swing",
+      "purple cap",
+      "economy",
+      "knuckle ball"
+    ]
   },
   {
     "id": 26,
@@ -882,8 +1099,12 @@
     "role": "Bowler",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm legbreak",
-    "primaryTeams": ["Mumbai Indians", "RCB", "Rajasthan Royals"],
-    "currentTeam": "Rajasthan Royals",
+    "primaryTeams": [
+      "Mumbai Indians",
+      "RCB",
+      "Rajasthan Royals"
+    ],
+    "currentTeam": "RR",
     "isActive": true,
     "isCaptain": false,
     "hasWonIPLTitle": true,
@@ -907,7 +1128,12 @@
     "ageBracket": "senior",
     "battingTier": "none",
     "bowlingTier": "elite",
-    "famousFor": ["leg-spin", "leading wicket taker", "chess player", "funny celebrations"]
+    "famousFor": [
+      "leg-spin",
+      "leading wicket taker",
+      "chess player",
+      "funny celebrations"
+    ]
   },
   {
     "id": 27,
@@ -917,7 +1143,11 @@
     "role": "All-rounder",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["Rising Pune Supergiant", "RCB", "SRH"],
+    "primaryTeams": [
+      "Rising Pune Supergiant",
+      "RCB",
+      "SRH"
+    ],
     "currentTeam": "SRH",
     "isActive": true,
     "isCaptain": false,
@@ -942,7 +1172,12 @@
     "ageBracket": "young-adult",
     "battingTier": "technical",
     "bowlingTier": "economy",
-    "famousFor": ["powerplay spin", "all-round", "calmness", "batting depth"]
+    "famousFor": [
+      "powerplay spin",
+      "all-round",
+      "calmness",
+      "batting depth"
+    ]
   },
   {
     "id": 28,
@@ -952,8 +1187,12 @@
     "role": "All-rounder",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Slow left-arm orthodox",
-    "primaryTeams": ["Mumbai Indians", "Kings XI Punjab", "Delhi Capitals"],
-    "currentTeam": "Delhi Capitals",
+    "primaryTeams": [
+      "Mumbai Indians",
+      "Kings XI Punjab",
+      "Delhi Capitals"
+    ],
+    "currentTeam": "DC",
     "isActive": true,
     "isCaptain": false,
     "hasWonIPLTitle": true,
@@ -977,7 +1216,12 @@
     "ageBracket": "senior",
     "battingTier": "finisher",
     "bowlingTier": "economy",
-    "famousFor": ["all-round skills", "economy", "quick overs", "useful bat"]
+    "famousFor": [
+      "all-round skills",
+      "economy",
+      "quick overs",
+      "useful bat"
+    ]
   },
   {
     "id": 29,
@@ -987,7 +1231,9 @@
     "role": "Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["CSK"],
+    "primaryTeams": [
+      "CSK"
+    ],
     "currentTeam": "CSK",
     "isActive": true,
     "isCaptain": true,
@@ -1012,7 +1258,12 @@
     "ageBracket": "young-adult",
     "battingTier": "technical",
     "bowlingTier": "none",
-    "famousFor": ["orange cap", "consistency", "captaincy", "technical batting"]
+    "famousFor": [
+      "orange cap",
+      "consistency",
+      "captaincy",
+      "technical batting"
+    ]
   },
   {
     "id": 30,
@@ -1022,8 +1273,11 @@
     "role": "Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["KKR", "Gujarat Titans"],
-    "currentTeam": "Gujarat Titans",
+    "primaryTeams": [
+      "KKR",
+      "Gujarat Titans"
+    ],
+    "currentTeam": "GT",
     "isActive": true,
     "isCaptain": true,
     "hasWonIPLTitle": true,
@@ -1047,7 +1301,12 @@
     "ageBracket": "young-adult",
     "battingTier": "elite",
     "bowlingTier": "none",
-    "famousFor": ["orange cap", "prince of indian cricket", "captaincy", "class"]
+    "famousFor": [
+      "orange cap",
+      "prince of indian cricket",
+      "captaincy",
+      "class"
+    ]
   },
   {
     "id": 31,
@@ -1057,8 +1316,11 @@
     "role": "Wicketkeeper-Batsman",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "None",
-    "primaryTeams": ["Gujarat Lions", "Mumbai Indians"],
-    "currentTeam": "Mumbai Indians",
+    "primaryTeams": [
+      "Gujarat Lions",
+      "Mumbai Indians"
+    ],
+    "currentTeam": "MI",
     "isActive": true,
     "isCaptain": false,
     "hasWonIPLTitle": true,
@@ -1082,7 +1344,12 @@
     "ageBracket": "young-adult",
     "battingTier": "power-hitter",
     "bowlingTier": "none",
-    "famousFor": ["aggressive opening", "keeping", "pocket dynamo", "consistency"]
+    "famousFor": [
+      "aggressive opening",
+      "keeping",
+      "pocket dynamo",
+      "consistency"
+    ]
   },
   {
     "id": 32,
@@ -1092,7 +1359,11 @@
     "role": "Batsman",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["KKR", "RCB", "Punjab Kings"],
+    "primaryTeams": [
+      "KKR",
+      "RCB",
+      "Punjab Kings"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -1117,7 +1388,12 @@
     "ageBracket": "veteran",
     "battingTier": "power-hitter",
     "bowlingTier": "part-time",
-    "famousFor": ["universe boss", "175*", "sixes", "celebrations"]
+    "famousFor": [
+      "universe boss",
+      "175*",
+      "sixes",
+      "celebrations"
+    ]
   },
   {
     "id": 33,
@@ -1127,7 +1403,10 @@
     "role": "Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm medium",
-    "primaryTeams": ["Delhi Capitals", "RCB"],
+    "primaryTeams": [
+      "Delhi Capitals",
+      "RCB"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -1152,7 +1431,12 @@
     "ageBracket": "veteran",
     "battingTier": "elite",
     "bowlingTier": "none",
-    "famousFor": ["mr. 360", "innovation", "clutch innings", "athleticism"]
+    "famousFor": [
+      "mr. 360",
+      "innovation",
+      "clutch innings",
+      "athleticism"
+    ]
   },
   {
     "id": 34,
@@ -1162,8 +1446,11 @@
     "role": "Batsman",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm legbreak",
-    "primaryTeams": ["Delhi Capitals", "SRH"],
-    "currentTeam": "Delhi Capitals",
+    "primaryTeams": [
+      "Delhi Capitals",
+      "SRH"
+    ],
+    "currentTeam": "DC",
     "isActive": true,
     "isCaptain": true,
     "hasWonIPLTitle": true,
@@ -1187,7 +1474,12 @@
     "ageBracket": "veteran",
     "battingTier": "elite",
     "bowlingTier": "none",
-    "famousFor": ["orange caps", "captaincy", "reels", "consistency"]
+    "famousFor": [
+      "orange caps",
+      "captaincy",
+      "reels",
+      "consistency"
+    ]
   },
   {
     "id": 35,
@@ -1197,8 +1489,11 @@
     "role": "Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["SRH", "Gujarat Titans"],
-    "currentTeam": "Gujarat Titans",
+    "primaryTeams": [
+      "SRH",
+      "Gujarat Titans"
+    ],
+    "currentTeam": "GT",
     "isActive": true,
     "isCaptain": false,
     "hasWonIPLTitle": true,
@@ -1222,7 +1517,12 @@
     "ageBracket": "senior",
     "battingTier": "technical",
     "bowlingTier": "none",
-    "famousFor": ["class", "captaincy", "fair play", "consistency"]
+    "famousFor": [
+      "class",
+      "captaincy",
+      "fair play",
+      "consistency"
+    ]
   },
   {
     "id": 36,
@@ -1232,8 +1532,13 @@
     "role": "Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm legbreak",
-    "primaryTeams": ["PWI", "RR", "RPS", "DC"],
-    "currentTeam": "Unsold",
+    "primaryTeams": [
+      "PWI",
+      "RR",
+      "RPS",
+      "DC"
+    ],
+    "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
     "hasWonIPLTitle": false,
@@ -1257,7 +1562,12 @@
     "ageBracket": "senior",
     "battingTier": "technical",
     "bowlingTier": "none",
-    "famousFor": ["unorthodox technique", "captaincy", "consistency", "leadership"]
+    "famousFor": [
+      "unorthodox technique",
+      "captaincy",
+      "consistency",
+      "leadership"
+    ]
   },
   {
     "id": 37,
@@ -1267,7 +1577,12 @@
     "role": "All-rounder",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["DC", "MI", "PBKS", "RCB"],
+    "primaryTeams": [
+      "DC",
+      "MI",
+      "PBKS",
+      "RCB"
+    ],
     "currentTeam": "RCB",
     "isActive": true,
     "isCaptain": false,
@@ -1292,7 +1607,12 @@
     "ageBracket": "senior",
     "battingTier": "power-hitter",
     "bowlingTier": "economy",
-    "famousFor": ["reverse sweep", "power", "off-spin", "showman"]
+    "famousFor": [
+      "reverse sweep",
+      "power",
+      "off-spin",
+      "showman"
+    ]
   },
   {
     "id": 38,
@@ -1302,8 +1622,11 @@
     "role": "Wicketkeeper-Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "None",
-    "primaryTeams": ["Mumbai Indians", "Rajasthan Royals"],
-    "currentTeam": "Rajasthan Royals",
+    "primaryTeams": [
+      "Mumbai Indians",
+      "Rajasthan Royals"
+    ],
+    "currentTeam": "RR",
     "isActive": true,
     "isCaptain": false,
     "hasWonIPLTitle": true,
@@ -1327,7 +1650,12 @@
     "ageBracket": "senior",
     "battingTier": "elite",
     "bowlingTier": "none",
-    "famousFor": ["orange cap", "hundreds", "opening", "innovation"]
+    "famousFor": [
+      "orange cap",
+      "hundreds",
+      "opening",
+      "innovation"
+    ]
   },
   {
     "id": 39,
@@ -1337,7 +1665,11 @@
     "role": "Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm legbreak",
-    "primaryTeams": ["CSK", "Rising Pune Supergiant", "RCB"],
+    "primaryTeams": [
+      "CSK",
+      "Rising Pune Supergiant",
+      "RCB"
+    ],
     "currentTeam": "RCB",
     "isActive": true,
     "isCaptain": true,
@@ -1362,7 +1694,12 @@
     "ageBracket": "veteran",
     "battingTier": "elite",
     "bowlingTier": "none",
-    "famousFor": ["fitness", "fielding", "consistency", "captaincy"]
+    "famousFor": [
+      "fitness",
+      "fielding",
+      "consistency",
+      "captaincy"
+    ]
   },
   {
     "id": 40,
@@ -1372,7 +1709,9 @@
     "role": "All-rounder",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm medium",
-    "primaryTeams": ["Mumbai Indians"],
+    "primaryTeams": [
+      "Mumbai Indians"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -1397,7 +1736,12 @@
     "ageBracket": "veteran",
     "battingTier": "power-hitter",
     "bowlingTier": "part-time",
-    "famousFor": ["clutch performance", "power hitting", "fielding", "loyalty"]
+    "famousFor": [
+      "clutch performance",
+      "power hitting",
+      "fielding",
+      "loyalty"
+    ]
   },
   {
     "id": 41,
@@ -1407,7 +1751,11 @@
     "role": "All-rounder",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm medium-fast",
-    "primaryTeams": ["MI", "CSK", "GL"],
+    "primaryTeams": [
+      "MI",
+      "CSK",
+      "GL"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -1432,7 +1780,12 @@
     "ageBracket": "veteran",
     "battingTier": "finisher",
     "bowlingTier": "death-specialist",
-    "famousFor": ["champion song", "slower balls", "death bowling", "all-round"]
+    "famousFor": [
+      "champion song",
+      "slower balls",
+      "death bowling",
+      "all-round"
+    ]
   },
   {
     "id": 42,
@@ -1442,7 +1795,10 @@
     "role": "All-rounder",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm fast",
-    "primaryTeams": ["Delhi Capitals", "KKR"],
+    "primaryTeams": [
+      "Delhi Capitals",
+      "KKR"
+    ],
     "currentTeam": "KKR",
     "isActive": true,
     "isCaptain": false,
@@ -1467,7 +1823,12 @@
     "ageBracket": "senior",
     "battingTier": "power-hitter",
     "bowlingTier": "strike-bowler",
-    "famousFor": ["muscle power", "brute force", "death bowling", "russell storm"]
+    "famousFor": [
+      "muscle power",
+      "brute force",
+      "death bowling",
+      "russell storm"
+    ]
   },
   {
     "id": 43,
@@ -1477,7 +1838,9 @@
     "role": "All-rounder",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["KKR"],
+    "primaryTeams": [
+      "KKR"
+    ],
     "currentTeam": "KKR",
     "isActive": true,
     "isCaptain": false,
@@ -1502,7 +1865,12 @@
     "ageBracket": "veteran",
     "battingTier": "pinch-hitter",
     "bowlingTier": "mystery",
-    "famousFor": ["mystery spin", "opening batting", "economy", "poker face"]
+    "famousFor": [
+      "mystery spin",
+      "opening batting",
+      "economy",
+      "poker face"
+    ]
   },
   {
     "id": 44,
@@ -1512,7 +1880,9 @@
     "role": "Bowler",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm fast",
-    "primaryTeams": ["Mumbai Indians"],
+    "primaryTeams": [
+      "Mumbai Indians"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -1537,7 +1907,12 @@
     "ageBracket": "veteran",
     "battingTier": "none",
     "bowlingTier": "elite",
-    "famousFor": ["sling action", "yorkers", "purple cap", "death bowling"]
+    "famousFor": [
+      "sling action",
+      "yorkers",
+      "purple cap",
+      "death bowling"
+    ]
   },
   {
     "id": 45,
@@ -1547,7 +1922,11 @@
     "role": "Bowler",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm fast",
-    "primaryTeams": ["RCB", "SRH", "GL"],
+    "primaryTeams": [
+      "RCB",
+      "SRH",
+      "GL"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -1572,7 +1951,12 @@
     "ageBracket": "veteran",
     "battingTier": "none",
     "bowlingTier": "elite",
-    "famousFor": ["pace", "outswing", "aggression", "steyngun"]
+    "famousFor": [
+      "pace",
+      "outswing",
+      "aggression",
+      "steyngun"
+    ]
   },
   {
     "id": 46,
@@ -1582,7 +1966,11 @@
     "role": "Bowler",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm fast",
-    "primaryTeams": ["KKR", "Delhi Capitals", "SRH"],
+    "primaryTeams": [
+      "KKR",
+      "Delhi Capitals",
+      "SRH"
+    ],
     "currentTeam": "SRH",
     "isActive": true,
     "isCaptain": true,
@@ -1607,7 +1995,12 @@
     "ageBracket": "senior",
     "battingTier": "lower-middle",
     "bowlingTier": "elite",
-    "famousFor": ["pace", "captaincy", "expensive buy", "hitting"]
+    "famousFor": [
+      "pace",
+      "captaincy",
+      "expensive buy",
+      "hitting"
+    ]
   },
   {
     "id": 47,
@@ -1617,7 +2010,10 @@
     "role": "Bowler",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Left-arm fast",
-    "primaryTeams": ["RCB", "KKR"],
+    "primaryTeams": [
+      "RCB",
+      "KKR"
+    ],
     "currentTeam": "KKR",
     "isActive": true,
     "isCaptain": false,
@@ -1642,7 +2038,12 @@
     "ageBracket": "senior",
     "battingTier": "none",
     "bowlingTier": "elite",
-    "famousFor": ["yorkers", "swing", "expensive player", "left-arm pace"]
+    "famousFor": [
+      "yorkers",
+      "swing",
+      "expensive player",
+      "left-arm pace"
+    ]
   },
   {
     "id": 48,
@@ -1652,8 +2053,11 @@
     "role": "Bowler",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm legbreak",
-    "primaryTeams": ["SRH", "Gujarat Titans"],
-    "currentTeam": "Gujarat Titans",
+    "primaryTeams": [
+      "SRH",
+      "Gujarat Titans"
+    ],
+    "currentTeam": "GT",
     "isActive": true,
     "isCaptain": false,
     "hasWonIPLTitle": true,
@@ -1677,7 +2081,12 @@
     "ageBracket": "senior",
     "battingTier": "finisher",
     "bowlingTier": "elite",
-    "famousFor": ["quick leg-spin", "snake shot", "economy", "match winner"]
+    "famousFor": [
+      "quick leg-spin",
+      "snake shot",
+      "economy",
+      "match winner"
+    ]
   },
   {
     "id": 49,
@@ -1687,8 +2096,14 @@
     "role": "Bowler",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Left-arm fast-medium",
-    "primaryTeams": ["SRH", "KKR", "DC", "MI", "RR"],
-    "currentTeam": "Rajasthan Royals",
+    "primaryTeams": [
+      "SRH",
+      "KKR",
+      "DC",
+      "MI",
+      "RR"
+    ],
+    "currentTeam": "RR",
     "isActive": true,
     "isCaptain": false,
     "hasWonIPLTitle": true,
@@ -1712,7 +2127,12 @@
     "ageBracket": "senior",
     "battingTier": "none",
     "bowlingTier": "swing",
-    "famousFor": ["first over wickets", "swing", "fielding", "consistency"]
+    "famousFor": [
+      "first over wickets",
+      "swing",
+      "fielding",
+      "consistency"
+    ]
   },
   {
     "id": 50,
@@ -1722,8 +2142,14 @@
     "role": "Bowler",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm fast-medium",
-    "primaryTeams": ["CSK", "RR", "MI", "RCB", "KKR"],
-    "currentTeam": "Unsold",
+    "primaryTeams": [
+      "CSK",
+      "RR",
+      "MI",
+      "RCB",
+      "KKR"
+    ],
+    "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
     "hasWonIPLTitle": true,
@@ -1747,7 +2173,12 @@
     "ageBracket": "senior",
     "battingTier": "none",
     "bowlingTier": "swing",
-    "famousFor": ["swing", "outswingers", "leadership", "longevity"]
+    "famousFor": [
+      "swing",
+      "outswingers",
+      "leadership",
+      "longevity"
+    ]
   },
   {
     "id": 51,
@@ -1757,8 +2188,11 @@
     "role": "Wicketkeeper-Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "None",
-    "primaryTeams": ["SRH", "PBKS"],
-    "currentTeam": "Punjab Kings",
+    "primaryTeams": [
+      "SRH",
+      "PBKS"
+    ],
+    "currentTeam": "PBKS",
     "isActive": true,
     "isCaptain": false,
     "hasWonIPLTitle": false,
@@ -1782,7 +2216,12 @@
     "ageBracket": "senior",
     "battingTier": "power-hitter",
     "bowlingTier": "none",
-    "famousFor": ["aggressive opening", "keeping", "partnership with warner", "power"]
+    "famousFor": [
+      "aggressive opening",
+      "keeping",
+      "partnership with warner",
+      "power"
+    ]
   },
   {
     "id": 52,
@@ -1792,7 +2231,9 @@
     "role": "Batsman",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm medium",
-    "primaryTeams": ["CSK"],
+    "primaryTeams": [
+      "CSK"
+    ],
     "currentTeam": "CSK",
     "isActive": true,
     "isCaptain": false,
@@ -1817,7 +2258,12 @@
     "ageBracket": "senior",
     "battingTier": "technical",
     "bowlingTier": "none",
-    "famousFor": ["consistency", "technique", "opening", "CSK star"]
+    "famousFor": [
+      "consistency",
+      "technique",
+      "opening",
+      "CSK star"
+    ]
   },
   {
     "id": 53,
@@ -1827,7 +2273,11 @@
     "role": "Wicketkeeper-Batsman",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["PBKS", "SRH", "LSG"],
+    "primaryTeams": [
+      "PBKS",
+      "SRH",
+      "LSG"
+    ],
     "currentTeam": "LSG",
     "isActive": true,
     "isCaptain": false,
@@ -1852,7 +2302,12 @@
     "ageBracket": "senior",
     "battingTier": "power-hitter",
     "bowlingTier": "none",
-    "famousFor": ["sixes", "finishing", "athleticism", "dynamic batting"]
+    "famousFor": [
+      "sixes",
+      "finishing",
+      "athleticism",
+      "dynamic batting"
+    ]
   },
   {
     "id": 54,
@@ -1862,8 +2317,12 @@
     "role": "Batsman",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "None",
-    "primaryTeams": ["RCB", "DC", "RR"],
-    "currentTeam": "Rajasthan Royals",
+    "primaryTeams": [
+      "RCB",
+      "DC",
+      "RR"
+    ],
+    "currentTeam": "RR",
     "isActive": true,
     "isCaptain": false,
     "hasWonIPLTitle": false,
@@ -1887,7 +2346,12 @@
     "ageBracket": "senior",
     "battingTier": "power-hitter",
     "bowlingTier": "none",
-    "famousFor": ["finishing", "power", "clutch", "RR middle order"]
+    "famousFor": [
+      "finishing",
+      "power",
+      "clutch",
+      "RR middle order"
+    ]
   },
   {
     "id": 55,
@@ -1897,8 +2361,11 @@
     "role": "All-rounder",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm legbreak",
-    "primaryTeams": ["RR", "PBKS"],
-    "currentTeam": "Punjab Kings",
+    "primaryTeams": [
+      "RR",
+      "PBKS"
+    ],
+    "currentTeam": "PBKS",
     "isActive": true,
     "isCaptain": false,
     "hasWonIPLTitle": false,
@@ -1922,7 +2389,12 @@
     "ageBracket": "senior",
     "battingTier": "power-hitter",
     "bowlingTier": "economy",
-    "famousFor": ["massive sixes", "leg-spin and off-spin", "aggression", "all-round"]
+    "famousFor": [
+      "massive sixes",
+      "leg-spin and off-spin",
+      "aggression",
+      "all-round"
+    ]
   },
   {
     "id": 56,
@@ -1932,8 +2404,11 @@
     "role": "All-rounder",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Left-arm medium-fast",
-    "primaryTeams": ["PBKS", "CSK"],
-    "currentTeam": "Punjab Kings",
+    "primaryTeams": [
+      "PBKS",
+      "CSK"
+    ],
+    "currentTeam": "PBKS",
     "isActive": true,
     "isCaptain": true,
     "hasWonIPLTitle": true,
@@ -1957,7 +2432,12 @@
     "ageBracket": "young-adult",
     "battingTier": "middle",
     "bowlingTier": "strike-bowler",
-    "famousFor": ["all-round", "most expensive player", "clutch", "swing"]
+    "famousFor": [
+      "all-round",
+      "most expensive player",
+      "clutch",
+      "swing"
+    ]
   },
   {
     "id": 57,
@@ -1967,8 +2447,12 @@
     "role": "All-rounder",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm fast-medium",
-    "primaryTeams": ["RPS", "RR", "CSK"],
-    "currentTeam": "Retired/Inactive",
+    "primaryTeams": [
+      "RPS",
+      "RR",
+      "CSK"
+    ],
+    "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
     "hasWonIPLTitle": true,
@@ -1992,7 +2476,12 @@
     "ageBracket": "senior",
     "battingTier": "power-hitter",
     "bowlingTier": "strike-bowler",
-    "famousFor": ["clutch performance", "expensive player", "all-round", "world class"]
+    "famousFor": [
+      "clutch performance",
+      "expensive player",
+      "all-round",
+      "world class"
+    ]
   },
   {
     "id": 58,
@@ -2002,7 +2491,12 @@
     "role": "Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["RCB", "Deccan Chargers", "DC", "RPS"],
+    "primaryTeams": [
+      "RCB",
+      "Deccan Chargers",
+      "DC",
+      "RPS"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -2027,7 +2521,12 @@
     "ageBracket": "veteran",
     "battingTier": "elite",
     "bowlingTier": "none",
-    "famousFor": ["switch hit", "aggression", "captaincy", "showman"]
+    "famousFor": [
+      "switch hit",
+      "aggression",
+      "captaincy",
+      "showman"
+    ]
   },
   {
     "id": 59,
@@ -2037,7 +2536,10 @@
     "role": "All-rounder",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm fast-medium",
-    "primaryTeams": ["RCB", "KKR"],
+    "primaryTeams": [
+      "RCB",
+      "KKR"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -2062,7 +2564,12 @@
     "ageBracket": "veteran",
     "battingTier": "technical",
     "bowlingTier": "economy",
-    "famousFor": ["all-time great", "consistency", "solid defense", "reliability"]
+    "famousFor": [
+      "all-time great",
+      "consistency",
+      "solid defense",
+      "reliability"
+    ]
   },
   {
     "id": 60,
@@ -2072,7 +2579,11 @@
     "role": "All-rounder",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm fast-medium",
-    "primaryTeams": ["Rajasthan Royals", "RCB", "CSK"],
+    "primaryTeams": [
+      "Rajasthan Royals",
+      "RCB",
+      "CSK"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -2097,7 +2608,12 @@
     "ageBracket": "veteran",
     "battingTier": "power-hitter",
     "bowlingTier": "strike-bowler",
-    "famousFor": ["hundred in final", "mvp", "power hitting", "swing"]
+    "famousFor": [
+      "hundred in final",
+      "mvp",
+      "power hitting",
+      "swing"
+    ]
   },
   {
     "id": 61,
@@ -2107,7 +2623,9 @@
     "role": "Batsman",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Slow left-arm orthodox",
-    "primaryTeams": ["Kings XI Punjab"],
+    "primaryTeams": [
+      "Kings XI Punjab"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -2132,7 +2650,12 @@
     "ageBracket": "veteran",
     "battingTier": "elite",
     "bowlingTier": "none",
-    "famousFor": ["first orange cap", "consistency", "opening", "elegant leftie"]
+    "famousFor": [
+      "first orange cap",
+      "consistency",
+      "opening",
+      "elegant leftie"
+    ]
   },
   {
     "id": 62,
@@ -2142,7 +2665,11 @@
     "role": "All-rounder",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["KKR", "Kings XI Punjab", "CSK"],
+    "primaryTeams": [
+      "KKR",
+      "Kings XI Punjab",
+      "CSK"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -2167,7 +2694,12 @@
     "ageBracket": "veteran",
     "battingTier": "finisher",
     "bowlingTier": "part-time",
-    "famousFor": ["t20 specialist", "middle order", "off-spin", "leadership"]
+    "famousFor": [
+      "t20 specialist",
+      "middle order",
+      "off-spin",
+      "leadership"
+    ]
   },
   {
     "id": 63,
@@ -2177,7 +2709,10 @@
     "role": "Batsman",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm legbreak",
-    "primaryTeams": ["Delhi Capitals", "KKR"],
+    "primaryTeams": [
+      "Delhi Capitals",
+      "KKR"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -2202,7 +2737,12 @@
     "ageBracket": "veteran",
     "battingTier": "technical",
     "bowlingTier": "none",
-    "famousFor": ["captaincy", "opening", "two titles", "aggression"]
+    "famousFor": [
+      "captaincy",
+      "opening",
+      "two titles",
+      "aggression"
+    ]
   },
   {
     "id": 64,
@@ -2212,7 +2752,11 @@
     "role": "Bowler",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["Mumbai Indians", "CSK", "KKR"],
+    "primaryTeams": [
+      "Mumbai Indians",
+      "CSK",
+      "KKR"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -2237,7 +2781,12 @@
     "ageBracket": "veteran",
     "battingTier": "none",
     "bowlingTier": "economy",
-    "famousFor": ["off-spin", "bhajji", "clutch", "longevity"]
+    "famousFor": [
+      "off-spin",
+      "bhajji",
+      "clutch",
+      "longevity"
+    ]
   },
   {
     "id": 65,
@@ -2247,7 +2796,11 @@
     "role": "Bowler",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Left-arm fast-medium",
-    "primaryTeams": ["RCB", "MI", "Delhi Capitals"],
+    "primaryTeams": [
+      "RCB",
+      "MI",
+      "Delhi Capitals"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -2272,7 +2825,12 @@
     "ageBracket": "veteran",
     "battingTier": "none",
     "bowlingTier": "swing",
-    "famousFor": ["swing", "left-arm pace", "leadership", "intelligence"]
+    "famousFor": [
+      "swing",
+      "left-arm pace",
+      "leadership",
+      "intelligence"
+    ]
   },
   {
     "id": 66,
@@ -2282,8 +2840,14 @@
     "role": "All-rounder",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["CSK", "RPS", "KXIP", "DC", "RR"],
-    "currentTeam": "Rajasthan Royals",
+    "primaryTeams": [
+      "CSK",
+      "RPS",
+      "KXIP",
+      "DC",
+      "RR"
+    ],
+    "currentTeam": "RR",
     "isActive": true,
     "isCaptain": false,
     "hasWonIPLTitle": true,
@@ -2307,7 +2871,12 @@
     "ageBracket": "veteran",
     "battingTier": "technical",
     "bowlingTier": "economy",
-    "famousFor": ["carrom ball", "intelligence", "versatility", "ethics"]
+    "famousFor": [
+      "carrom ball",
+      "intelligence",
+      "versatility",
+      "ethics"
+    ]
   },
   {
     "id": 67,
@@ -2317,7 +2886,12 @@
     "role": "Bowler",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm legbreak",
-    "primaryTeams": ["DC", "Deccan Chargers", "SRH", "LSG"],
+    "primaryTeams": [
+      "DC",
+      "Deccan Chargers",
+      "SRH",
+      "LSG"
+    ],
     "currentTeam": "LSG",
     "isActive": true,
     "isCaptain": false,
@@ -2342,7 +2916,12 @@
     "ageBracket": "veteran",
     "battingTier": "none",
     "bowlingTier": "strike-bowler",
-    "famousFor": ["three hat-tricks", "leg-spin", "longevity", "wicket taker"]
+    "famousFor": [
+      "three hat-tricks",
+      "leg-spin",
+      "longevity",
+      "wicket taker"
+    ]
   },
   {
     "id": 68,
@@ -2352,7 +2931,14 @@
     "role": "Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm medium",
-    "primaryTeams": ["MI", "RCB", "PWI", "KKR", "RR", "CSK"],
+    "primaryTeams": [
+      "MI",
+      "RCB",
+      "PWI",
+      "KKR",
+      "RR",
+      "CSK"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -2377,7 +2963,12 @@
     "ageBracket": "veteran",
     "battingTier": "elite",
     "bowlingTier": "none",
-    "famousFor": ["orange cap", "walking shot", "opening", "clutch"]
+    "famousFor": [
+      "orange cap",
+      "walking shot",
+      "opening",
+      "clutch"
+    ]
   },
   {
     "id": 69,
@@ -2387,7 +2978,15 @@
     "role": "Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["MI", "RCB", "PWI", "KKR", "SRH", "LSG", "DC"],
+    "primaryTeams": [
+      "MI",
+      "RCB",
+      "PWI",
+      "KKR",
+      "SRH",
+      "LSG",
+      "DC"
+    ],
     "currentTeam": "KKR",
     "isActive": true,
     "isCaptain": false,
@@ -2412,7 +3011,12 @@
     "ageBracket": "veteran",
     "battingTier": "technical",
     "bowlingTier": "none",
-    "famousFor": ["first indian hundred", "fielding", "consistency", "reliability"]
+    "famousFor": [
+      "first indian hundred",
+      "fielding",
+      "consistency",
+      "reliability"
+    ]
   },
   {
     "id": 70,
@@ -2422,8 +3026,12 @@
     "role": "Wicketkeeper-Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "None",
-    "primaryTeams": ["KKR", "Rajasthan Royals", "DC"],
-    "currentTeam": "Rajasthan Royals",
+    "primaryTeams": [
+      "KKR",
+      "Rajasthan Royals",
+      "DC"
+    ],
+    "currentTeam": "RR",
     "isActive": true,
     "isCaptain": true,
     "hasWonIPLTitle": false,
@@ -2447,7 +3055,12 @@
     "ageBracket": "senior",
     "battingTier": "power-hitter",
     "bowlingTier": "none",
-    "famousFor": ["classy sixes", "captaincy", "keeping", "talent"]
+    "famousFor": [
+      "classy sixes",
+      "captaincy",
+      "keeping",
+      "talent"
+    ]
   },
   {
     "id": 71,
@@ -2457,8 +3070,11 @@
     "role": "Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["MI", "KKR"],
-    "currentTeam": "Mumbai Indians",
+    "primaryTeams": [
+      "MI",
+      "KKR"
+    ],
+    "currentTeam": "MI",
     "isActive": true,
     "isCaptain": false,
     "hasWonIPLTitle": true,
@@ -2482,7 +3098,12 @@
     "ageBracket": "senior",
     "battingTier": "elite",
     "bowlingTier": "none",
-    "famousFor": ["360 degree batting", "innovation", "sky", "clutch"]
+    "famousFor": [
+      "360 degree batting",
+      "innovation",
+      "sky",
+      "clutch"
+    ]
   },
   {
     "id": 72,
@@ -2492,7 +3113,10 @@
     "role": "Bowler",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm fast",
-    "primaryTeams": ["SRH", "RCB"],
+    "primaryTeams": [
+      "SRH",
+      "RCB"
+    ],
     "currentTeam": "RCB",
     "isActive": true,
     "isCaptain": false,
@@ -2517,7 +3141,12 @@
     "ageBracket": "senior",
     "battingTier": "none",
     "bowlingTier": "strike-bowler",
-    "famousFor": ["pace", "swing", "miyan magic", "aggression"]
+    "famousFor": [
+      "pace",
+      "swing",
+      "miyan magic",
+      "aggression"
+    ]
   },
   {
     "id": 73,
@@ -2527,8 +3156,10 @@
     "role": "Bowler",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Left-arm medium-fast",
-    "primaryTeams": ["Punjab Kings"],
-    "currentTeam": "Punjab Kings",
+    "primaryTeams": [
+      "Punjab Kings"
+    ],
+    "currentTeam": "PBKS",
     "isActive": true,
     "isCaptain": false,
     "hasWonIPLTitle": false,
@@ -2552,7 +3183,12 @@
     "ageBracket": "young-adult",
     "battingTier": "none",
     "bowlingTier": "death-specialist",
-    "famousFor": ["death bowling", "left-arm pace", "yorkers", "consistency"]
+    "famousFor": [
+      "death bowling",
+      "left-arm pace",
+      "yorkers",
+      "consistency"
+    ]
   },
   {
     "id": 74,
@@ -2562,7 +3198,13 @@
     "role": "Wicketkeeper-Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm medium",
-    "primaryTeams": ["KKR", "Kochi Tuskers", "GL", "RCB", "CSK"],
+    "primaryTeams": [
+      "KKR",
+      "Kochi Tuskers",
+      "GL",
+      "RCB",
+      "CSK"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -2587,7 +3229,12 @@
     "ageBracket": "veteran",
     "battingTier": "power-hitter",
     "bowlingTier": "none",
-    "famousFor": ["first ipl hundred", "aggressive opening", "bazball", "captaincy"]
+    "famousFor": [
+      "first ipl hundred",
+      "aggressive opening",
+      "bazball",
+      "captaincy"
+    ]
   },
   {
     "id": 75,
@@ -2597,7 +3244,11 @@
     "role": "Bowler",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["CSK", "Kochi Tuskers", "RCB"],
+    "primaryTeams": [
+      "CSK",
+      "Kochi Tuskers",
+      "RCB"
+    ],
     "currentTeam": "Retired",
     "isActive": false,
     "isCaptain": false,
@@ -2622,7 +3273,12 @@
     "ageBracket": "veteran",
     "battingTier": "none",
     "bowlingTier": "economy",
-    "famousFor": ["spin legend", "economy", "smile", "doosra"]
+    "famousFor": [
+      "spin legend",
+      "economy",
+      "smile",
+      "doosra"
+    ]
   },
   {
     "id": 76,
@@ -2632,7 +3288,13 @@
     "role": "Wicketkeeper-Batsman",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "None",
-    "primaryTeams": ["SRH", "Delhi Capitals", "RCB", "MI", "LSG"],
+    "primaryTeams": [
+      "SRH",
+      "Delhi Capitals",
+      "RCB",
+      "MI",
+      "LSG"
+    ],
     "currentTeam": "LSG",
     "isActive": true,
     "isCaptain": false,
@@ -2657,7 +3319,12 @@
     "ageBracket": "senior",
     "battingTier": "elite",
     "bowlingTier": "none",
-    "famousFor": ["consistent opening", "keeping", "hundreds", "dynamic batting"]
+    "famousFor": [
+      "consistent opening",
+      "keeping",
+      "hundreds",
+      "dynamic batting"
+    ]
   },
   {
     "id": 77,
@@ -2667,8 +3334,11 @@
     "role": "Bowler",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm fast",
-    "primaryTeams": ["Delhi Capitals", "PBKS"],
-    "currentTeam": "Punjab Kings",
+    "primaryTeams": [
+      "Delhi Capitals",
+      "PBKS"
+    ],
+    "currentTeam": "PBKS",
     "isActive": true,
     "isCaptain": false,
     "hasWonIPLTitle": false,
@@ -2692,7 +3362,12 @@
     "ageBracket": "senior",
     "battingTier": "none",
     "bowlingTier": "elite",
-    "famousFor": ["pace", "purple cap", "death bowling", "strike bowler"]
+    "famousFor": [
+      "pace",
+      "purple cap",
+      "death bowling",
+      "strike bowler"
+    ]
   },
   {
     "id": 78,
@@ -2702,8 +3377,10 @@
     "role": "Bowler",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm fast",
-    "primaryTeams": ["Delhi Capitals"],
-    "currentTeam": "Delhi Capitals",
+    "primaryTeams": [
+      "Delhi Capitals"
+    ],
+    "currentTeam": "DC",
     "isActive": true,
     "isCaptain": false,
     "hasWonIPLTitle": false,
@@ -2727,7 +3404,12 @@
     "ageBracket": "senior",
     "battingTier": "none",
     "bowlingTier": "elite",
-    "famousFor": ["extreme pace", "yorkers", "dc fast bowler", "speed"]
+    "famousFor": [
+      "extreme pace",
+      "yorkers",
+      "dc fast bowler",
+      "speed"
+    ]
   },
   {
     "id": 79,
@@ -2737,7 +3419,12 @@
     "role": "All-rounder",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm medium",
-    "primaryTeams": ["KXIP", "RCB", "DC", "LSG"],
+    "primaryTeams": [
+      "KXIP",
+      "RCB",
+      "DC",
+      "LSG"
+    ],
     "currentTeam": "LSG",
     "isActive": true,
     "isCaptain": false,
@@ -2762,7 +3449,12 @@
     "ageBracket": "senior",
     "battingTier": "power-hitter",
     "bowlingTier": "economy",
-    "famousFor": ["all-round", "power", "hulk", "finishing"]
+    "famousFor": [
+      "all-round",
+      "power",
+      "hulk",
+      "finishing"
+    ]
   },
   {
     "id": 80,
@@ -2772,7 +3464,10 @@
     "role": "All-rounder",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "primaryTeams": ["RCB", "CSK"],
+    "primaryTeams": [
+      "RCB",
+      "CSK"
+    ],
     "currentTeam": "CSK",
     "isActive": true,
     "isCaptain": false,
@@ -2797,7 +3492,12 @@
     "ageBracket": "veteran",
     "battingTier": "power-hitter",
     "bowlingTier": "economy",
-    "famousFor": ["all-round", "off-spin", "elegant batting", "CSK regular"]
+    "famousFor": [
+      "all-round",
+      "off-spin",
+      "elegant batting",
+      "CSK regular"
+    ]
   },
   {
     "id": 81,
@@ -2807,7 +3507,9 @@
     "role": "Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "None",
-    "primaryTeams": ["RCB"],
+    "primaryTeams": [
+      "RCB"
+    ],
     "currentTeam": "RCB",
     "isActive": true,
     "isCaptain": true,
@@ -2832,7 +3534,11 @@
     "ageBracket": "senior",
     "battingTier": "power-hitter",
     "bowlingTier": "none",
-    "famousFor": ["clean hitting", "century in playoffs", "2025 winning captain"]
+    "famousFor": [
+      "clean hitting",
+      "century in playoffs",
+      "2025 winning captain"
+    ]
   },
   {
     "id": 82,
@@ -2842,7 +3548,10 @@
     "role": "Bowler",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Left-arm fast-medium",
-    "primaryTeams": ["Gujarat Titans", "RCB"],
+    "primaryTeams": [
+      "Gujarat Titans",
+      "RCB"
+    ],
     "currentTeam": "RCB",
     "isActive": true,
     "isCaptain": false,
@@ -2867,6 +3576,10 @@
     "ageBracket": "young",
     "battingTier": "none",
     "bowlingTier": "economy",
-    "famousFor": ["comeback", "swing", "2025 champion"]
+    "famousFor": [
+      "comeback",
+      "swing",
+      "2025 champion"
+    ]
   }
 ]

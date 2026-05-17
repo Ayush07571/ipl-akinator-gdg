@@ -12,9 +12,11 @@ import {
   Target,
   Flame,
   Search,
-  Users
+  Users,
+  Activity,
+  ShieldAlert
 } from 'lucide-react';
-import { players as allPlayersData } from '@/lib/players';
+import { players as allPlayersData, TEAM_BRAND_COLORS, getPlayerImageUrl } from '@/lib/players';
 import confetti from 'canvas-confetti';
 
 type GamePhase = 'thinking' | 'questioning' | 'guessing' | 'correct' | 'wrong';
@@ -28,6 +30,7 @@ interface HistoryItem {
 export default function GamePage() {
   // Game State
   const [remainingPlayers, setRemainingPlayers] = useState<string[]>(allPlayersData.map(p => p.name));
+  const [candidates, setCandidates] = useState<{ name: string; probability: number; team: string; role: string; }[]>([]);
   const [history, setHistory] = useState<HistoryItem[]>([]);
   const [currentQuestion, setCurrentQuestion] = useState<{ question: string; targetField: string } | null>(null);
   const [questionNumber, setQuestionNumber] = useState(1);
@@ -38,6 +41,30 @@ export default function GamePage() {
   const [reasoning, setReasoning] = useState<string>('');
   const [isApiLoading, setIsApiLoading] = useState(false);
   const [feedbackPlayer, setFeedbackPlayer] = useState('');
+
+  // API Health Diagnostic State
+  const [healthStatus, setHealthStatus] = useState<'loading' | 'healthy' | 'degraded' | 'offline'>('loading');
+  const [activeProvider, setActiveProvider] = useState<string>('Detecting...');
+  const [apiLatency, setApiLatency] = useState<number | null>(null);
+  const [checkingHealth, setCheckingHealth] = useState(false);
+
+  const checkSystemHealth = async () => {
+    setCheckingHealth(true);
+    setHealthStatus('loading');
+    try {
+      const res = await fetch('/api/health');
+      const data = await res.json();
+      setHealthStatus(data.status);
+      setActiveProvider(data.provider);
+      setApiLatency(data.latency);
+    } catch (e) {
+      setHealthStatus('offline');
+      setActiveProvider('Local Fallback');
+      setApiLatency(null);
+    } finally {
+      setCheckingHealth(false);
+    }
+  };
 
   // Derived State
   const eliminatedPlayers = useMemo(() => 
@@ -53,8 +80,8 @@ export default function GamePage() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          remainingPlayers: allPlayersData.map(p => p.name),
-          questionsAsked: [],
+          remainingPlayers: [],
+          history: [],
           questionNumber: 1
         })
       });
@@ -78,6 +105,7 @@ export default function GamePage() {
     })));
 
     const init = async () => {
+      await checkSystemHealth();
       await fetchFirstQuestion();
     };
     init();
@@ -110,12 +138,13 @@ export default function GamePage() {
       });
       const dedData = await deductorRes.json();
 
-      setRemainingPlayers(dedData.remainingPlayers);
-      setConfidence(dedData.confidence);
-      setTopGuess(dedData.topGuess);
-      setReasoning(dedData.reasoning);
+      setRemainingPlayers(dedData.remainingPlayers || []);
+      setCandidates(dedData.candidates || []);
+      setConfidence(dedData.confidence || 0);
+      setTopGuess(dedData.topGuess || "Secret Player");
+      setReasoning(dedData.reasoning || "Analyzing details.");
 
-      if (dedData.readyToGuess || questionNumber >= 12) {
+      if (dedData.readyToGuess) {
         setGamePhase('guessing');
         return;
       }
@@ -126,7 +155,7 @@ export default function GamePage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           remainingPlayers: dedData.remainingPlayers,
-          questionsAsked: newHistory.map(h => h.question),
+          history: newHistory,
           questionNumber: questionNumber + 1
         })
       });
@@ -144,8 +173,8 @@ export default function GamePage() {
 
     } catch (error) {
       console.error('Game logic error:', error);
-      // Only fallback to guessing if we have enough questions, otherwise stay here
-      if (questionNumber >= 8) {
+      // Only fallback to guessing if we have many questions answered
+      if (questionNumber >= 20) {
         setGamePhase('guessing');
       } else {
         setIsApiLoading(false);
@@ -189,6 +218,7 @@ export default function GamePage() {
 
   const restartGame = () => {
     setRemainingPlayers(allPlayersData.map(p => p.name));
+    setCandidates([]);
     setHistory([]);
     setQuestionNumber(1);
     setConfidence(0);
@@ -235,13 +265,13 @@ export default function GamePage() {
 
       <AnimatePresence>
         {gamePhase === 'guessing' && (
-          <GuessOverlay name={topGuess} onResult={handleResult} />
+          <GuessOverlay name={topGuess} confidence={confidence} onResult={handleResult} />
         )}
       </AnimatePresence>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 h-screen relative z-10">
         
-        {/* LEFT PANEL: Suspect Pool */}
+        {/* LEFT PANEL: Live AI Suspect Board */}
         <div className="hidden lg:flex lg:col-span-3 border-r border-white/5 flex-col bg-[#05050a]/50 backdrop-blur-sm pt-8">
           <div className="px-6 mb-4">
             <div className="bg-white/5 border border-white/5 rounded-2xl p-4 shadow-sm">
@@ -250,36 +280,135 @@ export default function GamePage() {
               </h2>
               <div className="flex items-baseline gap-2">
                 <motion.div 
-                  key={remainingPlayers.length}
+                  key={candidates.length}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   className="text-4xl font-black text-white"
                 >
-                  {remainingPlayers.length}
+                  {candidates.length || allPlayersData.length}
                 </motion.div>
-                <div className="text-[8px] font-black text-gray-600 uppercase tracking-tighter">Remaining</div>
+                <div className="text-[8px] font-black text-gray-600 uppercase tracking-tighter">Suspects Pool</div>
               </div>
             </div>
           </div>
           
-          <div className="flex-1 overflow-y-auto px-6 custom-scrollbar pb-8">
-            <div className="grid grid-cols-2 gap-2">
-              {allPlayersData.map((player) => {
-                const isEliminated = eliminatedPlayers.includes(player.name);
+          {/* API SYSTEM HEALTH MONITOR */}
+          <div className="px-6 mb-4">
+            <div className="bg-white/[0.02] border border-white/5 rounded-2xl p-4 shadow-sm flex flex-col gap-2.5 relative overflow-hidden group">
+              <div className="flex justify-between items-center relative z-10">
+                <div className="flex items-center gap-2">
+                  <Activity size={12} className="text-gray-400 animate-pulse" />
+                  <span className="text-[9px] font-black text-gray-400 uppercase tracking-widest">AI Connection Status</span>
+                </div>
+                
+                {/* Glowing status bulb */}
+                <div className="flex items-center gap-1.5">
+                  <span className={`w-1.5 h-1.5 rounded-full ${
+                    healthStatus === 'healthy' ? 'bg-[#00E5FF] shadow-[0_0_8px_#00E5FF] animate-pulse' :
+                    healthStatus === 'degraded' ? 'bg-[#FFB300] shadow-[0_0_8px_#FFB300] animate-pulse' :
+                    healthStatus === 'offline' ? 'bg-[#FF3366] shadow-[0_0_8px_#FF3366] animate-pulse' :
+                    'bg-gray-500 animate-pulse'
+                  }`} />
+                  <span className="text-[8px] font-black text-white uppercase tracking-wider">
+                    {healthStatus === 'loading' ? 'Checking...' : healthStatus.toUpperCase()}
+                  </span>
+                </div>
+              </div>
+
+              <div className="flex items-center justify-between border-t border-white/5 pt-2.5 relative z-10">
+                <div className="flex flex-col">
+                  <span className="text-[7px] font-black text-gray-500 uppercase tracking-wide">Active Engine</span>
+                  <span className="text-[10px] font-black text-white uppercase tracking-tight flex items-center gap-1">
+                    {activeProvider}
+                  </span>
+                </div>
+                
+                {apiLatency !== null && (
+                  <div className="flex flex-col items-end">
+                    <span className="text-[7px] font-black text-gray-500 uppercase tracking-wide">Latency</span>
+                    <span className="text-[10px] font-black text-[#00E5FF]">{apiLatency}ms</span>
+                  </div>
+                )}
+              </div>
+
+              {healthStatus === 'degraded' && activeProvider.includes('OpenRouter') && (
+                <div className="flex gap-1.5 bg-amber-500/10 border border-amber-500/20 rounded-lg p-2 items-start relative z-10">
+                  <ShieldAlert size={12} className="text-[#FFB300] shrink-0 mt-0.5 animate-bounce" />
+                  <p className="text-[7px] font-bold text-amber-300 leading-normal uppercase">
+                    Rate limits exceeded on OpenRouter! Add GEMINI_API_KEY in .env.local to restore high-speed play.
+                  </p>
+                </div>
+              )}
+
+              {/* Diagnose button */}
+              <button
+                onClick={checkSystemHealth}
+                disabled={checkingHealth}
+                className="w-full py-1.5 bg-white/[0.03] border border-white/5 rounded-xl text-[8px] font-black text-white uppercase tracking-widest hover:bg-white/[0.08] active:scale-95 disabled:opacity-50 transition-all flex items-center justify-center gap-1 relative z-10"
+              >
+                {checkingHealth ? (
+                  <>
+                    <div className="w-2.5 h-2.5 border border-white/30 border-t-white rounded-full animate-spin" />
+                    Scanning System...
+                  </>
+                ) : (
+                  'Diagnose Connection'
+                )}
+              </button>
+              
+              {/* Subtle back ambient glow */}
+              <div className={`absolute -right-6 -bottom-6 w-12 h-12 rounded-full blur-xl opacity-[0.03] pointer-events-none transition-colors duration-500 ${
+                healthStatus === 'healthy' ? 'bg-[#00E5FF]' :
+                healthStatus === 'degraded' ? 'bg-[#FFB300]' :
+                healthStatus === 'offline' ? 'bg-[#FF3366]' :
+                'bg-gray-500'
+              }`} />
+            </div>
+          </div>
+          
+          <div className="flex-1 overflow-y-auto px-6 custom-scrollbar pb-8 space-y-3">
+            {candidates.length === 0 ? (
+              <div className="text-center py-10 px-4">
+                <div className="w-10 h-10 border-2 border-ipl-gold/30 border-t-ipl-gold rounded-full animate-spin mx-auto mb-4" />
+                <p className="text-[10px] font-black text-gray-500 uppercase tracking-widest">Scanning Stadium...</p>
+              </div>
+            ) : (
+              candidates.map((cand, idx) => {
+                const teamColors = TEAM_BRAND_COLORS[cand.team] || TEAM_BRAND_COLORS.Retired;
                 return (
                   <motion.div
-                    key={player.name}
-                    className={`px-2 py-1.5 rounded-lg text-[8px] font-black text-center transition-all border ${
-                      isEliminated 
-                        ? 'bg-transparent border-white/5 text-gray-800 line-through' 
-                        : 'bg-white/5 text-gray-400 border-white/10 hover:border-ipl-gold/50 cursor-default'
-                    }`}
+                    key={cand.name}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: idx * 0.05 }}
+                    className="p-3 bg-white/[0.03] border border-white/5 rounded-2xl flex flex-col gap-1.5 hover:bg-white/[0.06] transition-all group"
                   >
-                    {player.name}
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <h4 className="text-xs font-black text-white uppercase group-hover:text-ipl-gold transition-colors">{cand.name}</h4>
+                        <span className="text-[8px] text-gray-500 font-bold uppercase tracking-wider">{cand.role} • {cand.team}</span>
+                      </div>
+                      <div className="text-right">
+                        <span className="text-xs font-black" style={{ color: teamColors.primary }}>{cand.probability}%</span>
+                      </div>
+                    </div>
+                    
+                    {/* Live probability scale */}
+                    <div className="w-full h-1.5 bg-white/5 rounded-full overflow-hidden">
+                      <motion.div
+                        initial={{ width: 0 }}
+                        animate={{ width: `${cand.probability}%` }}
+                        className="h-full"
+                        style={{ 
+                          backgroundImage: `linear-gradient(to right, ${teamColors.primary}, #FF822A)`,
+                          transition: 'width 0.8s cubic-bezier(0.4, 0, 0.2, 1)' 
+                        }}
+                      />
+                    </div>
                   </motion.div>
                 );
-              })}
-            </div>
+              })
+            )}
           </div>
         </div>
 
@@ -420,9 +549,25 @@ export default function GamePage() {
   );
 }
 
-function GuessOverlay({ name, onResult }: { name: string; onResult: (correct: boolean) => void }) {
+// Hook: fetches the verified Wikipedia thumbnail for a guessed player
+function useWikipediaImage(playerName: string) {
+  const [imgUrl, setImgUrl] = useState<string | null>(null);
+  useEffect(() => {
+    if (!playerName) return;
+    setImgUrl(null);
+    const wikiName = playerName.trim().replace(/\s+/g, '_');
+    fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(wikiName)}`)
+      .then(r => r.json())
+      .then(data => { if (data?.thumbnail?.source) setImgUrl(data.thumbnail.source); })
+      .catch(() => {});
+  }, [playerName]);
+  return imgUrl;
+}
+
+function GuessOverlay({ name, confidence, onResult }: { name: string; confidence: number; onResult: (correct: boolean) => void }) {
   const [countdown, setCountdown] = useState(3);
   const showResult = countdown === 0;
+  const wikiImage = useWikipediaImage(name);
 
   useEffect(() => {
     if (countdown > 0) {
@@ -431,14 +576,21 @@ function GuessOverlay({ name, onResult }: { name: string; onResult: (correct: bo
     }
   }, [countdown]);
 
+  const player = allPlayersData.find(p => p.name.toLowerCase() === name.toLowerCase());
+  const team = player?.currentTeam || 'Retired';
+  const colors = TEAM_BRAND_COLORS[team] || TEAM_BRAND_COLORS.Retired;
+
   return (
     <motion.div 
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-50 bg-black/95 flex flex-col items-center justify-center text-center p-6"
+      className="fixed inset-0 z-50 bg-[#020208]/98 flex flex-col items-center justify-center text-center p-6"
     >
-      <div className="absolute inset-0 bg-radial-gradient from-ipl-blue/20 to-transparent pointer-events-none" />
+      <div 
+        className="absolute inset-0 opacity-15 pointer-events-none transition-all duration-1000 blur-[140px] rounded-full scale-75"
+        style={{ backgroundColor: colors.primary }}
+      />
       
       {!showResult ? (
         <motion.div
@@ -452,32 +604,66 @@ function GuessOverlay({ name, onResult }: { name: string; onResult: (correct: bo
         </motion.div>
       ) : (
         <motion.div
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          className="max-w-2xl w-full"
+          initial={{ rotateY: 90, scale: 0.8, opacity: 0 }}
+          animate={{ rotateY: 0, scale: 1, opacity: 1 }}
+          transition={{ type: 'spring', damping: 15 }}
+          className="w-[340px] rounded-[2.5rem] bg-white/[0.02] border border-white/10 backdrop-blur-xl p-6 shadow-2xl relative group overflow-hidden"
+          style={{
+            boxShadow: `0 20px 50px ${colors.shadow}`
+          }}
         >
-          <div className="text-ipl-gold font-black tracking-[0.5em] mb-4 uppercase">THE AI READS YOUR MIND...</div>
-          <h2 className="text-2xl text-gray-400 font-bold mb-8 italic">You are thinking of...</h2>
-          
-          <div className="relative mb-12">
-            <div className="absolute -inset-4 bg-ipl-gold/20 blur-3xl rounded-full" />
-            <h1 className="text-6xl md:text-8xl font-black tracking-tighter italic bg-linear-to-br from-white to-gray-500 bg-clip-text text-transparent drop-shadow-2xl">
-              {(name || "Secret Player").toUpperCase()}
-            </h1>
+          {/* Neon Border Glow */}
+          <div 
+            className="absolute inset-0 opacity-25 border-[3px] rounded-[2.5rem] pointer-events-none"
+            style={{ borderColor: colors.primary }}
+          />
+
+          {/* Dynamic Image — Wikipedia photo with initials avatar fallback */}
+          <div className="w-full h-[280px] rounded-[2rem] overflow-hidden mb-6 relative border border-white/10 bg-black/50">
+            <img 
+              src={wikiImage || getPlayerImageUrl(name)}
+              alt={name}
+              className="w-full h-full object-cover object-top filter grayscale group-hover:grayscale-0 transition-all duration-500"
+              onError={(e) => { e.currentTarget.src = getPlayerImageUrl(name); }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#020208] via-transparent to-transparent" />
+            
+            {/* Live Confidence Badge */}
+            <div className="absolute top-4 right-4 px-3 py-1 bg-black/60 backdrop-blur-md rounded-full border border-white/10 flex items-center gap-1">
+              <span className="text-[8px] font-black text-gray-400">CONFIDENCE:</span>
+              <span className="text-xs font-black text-ipl-gold">{confidence}%</span>
+            </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          {/* Player details */}
+          <div className="text-center mb-6">
+            <div 
+              className="text-[9px] font-black uppercase tracking-[0.25em] mb-1"
+              style={{ color: colors.primary }}
+            >
+              {team === 'Retired' ? 'IPL LEGEND' : `${team} SQUAD`}
+            </div>
+            <h2 className="text-3xl font-black italic tracking-tighter text-white uppercase drop-shadow-md">
+              {name}
+            </h2>
+            <div className="text-[10px] text-gray-500 font-bold mt-1">
+              {player?.role || 'Star Player'}
+            </div>
+          </div>
+
+          {/* Action buttons */}
+          <div className="grid grid-cols-2 gap-3">
             <button 
               onClick={() => onResult(true)}
-              className="px-10 py-5 bg-ipl-gold text-ipl-bg font-black rounded-2xl text-2xl hover:shadow-[0_0_40px_rgba(245,166,35,0.4)] transition-all flex items-center gap-3 justify-center"
+              className="py-3.5 bg-ipl-gold text-black text-xs font-black rounded-xl hover:shadow-[0_0_20px_rgba(245,166,35,0.4)] active:scale-95 transition-all uppercase italic"
             >
-              <CheckCircle2 size={32} /> 🎉 CORRECT!
+              🎉 Correct
             </button>
             <button 
               onClick={() => onResult(false)}
-              className="px-10 py-5 bg-white/5 border border-white/10 font-black rounded-2xl text-2xl hover:bg-red-500/10 hover:border-red-500/50 transition-all flex items-center gap-3 justify-center"
+              className="py-3.5 bg-white/5 border border-white/10 text-xs font-black rounded-xl hover:bg-red-500/15 hover:border-red-500/40 active:scale-95 transition-all uppercase italic"
             >
-              <XCircle size={32} /> ❌ WRONG
+              ❌ Wrong
             </button>
           </div>
         </motion.div>

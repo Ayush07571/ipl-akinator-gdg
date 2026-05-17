@@ -1,0 +1,65 @@
+{
+  "season": 2026,
+  "teams": {
+    "CSK": {
+      "name": "Chennai Super Kings",
+      "captain": "Ruturaj Gaikwad",
+      "key_players": ["MS Dhoni", "Ruturaj Gaikwad", "Ravindra Jadeja", "Shivam Dube", "Matheesha Pathirana", "Rachin Ravindra", "Daryl Mitchell", "Deepak Chahar", "Ajinkya Rahane", "Tushar Deshpande"],
+      "legends": ["Suresh Raina", "Ambati Rayudu", "Dwayne Bravo", "Matthew Hayden", "Murali Vijay", "Albie Morkel", "Stephen Fleming"]
+    },
+    "MI": {
+      "name": "Mumbai Indians",
+      "captain": "Hardik Pandya",
+      "key_players": ["Rohit Sharma", "Hardik Pandya", "Jasprit Bumrah", "Suryakumar Yadav", "Tilak Varma", "Ishan Kishan", "Tim David", "Gerald Coetzee", "Piyush Chawla", "Akash Madhwal"],
+      "legends": ["Sachin Tendulkar", "Kieron Pollard", "Lasith Malinga", "Harbhajan Singh", "Zaheer Khan", "Ambati Rayudu", "Mitchell McClenaghan"]
+    },
+    "RCB": {
+      "name": "Royal Challengers Bengaluru",
+      "captain": "Virat Kohli",
+      "key_players": ["Virat Kohli", "Faf du Plessis", "Glenn Maxwell", "Mohammed Siraj", "Rajat Patidar", "Will Jacks", "Yash Dayal", "Dinesh Karthik", "Cameron Green", "Anuj Rawat"],
+      "legends": ["AB de Villiers", "Chris Gayle", "Anil Kumble", "Rahul Dravid", "Zaheer Khan", "Jacques Kallis", "Yuzvendra Chahal"]
+    },
+    "KKR": {
+      "name": "Kolkata Knight Riders",
+      "captain": "Shreyas Iyer",
+      "key_players": ["Shreyas Iyer", "Andre Russell", "Sunil Narine", "Rinku Singh", "Varun Chakaravarthy", "Mitchell Starc", "Venkatesh Iyer", "Phil Salt", "Harshit Rana", "Ramandeep Singh"],
+      "legends": ["Gautam Gambhir", "Sourav Ganguly", "Yusuf Pathan", "Jacques Kallis", "Robin Uthappa", "Brendon McCullum", "Eoin Morgan"]
+    },
+    "RR": {
+      "name": "Rajasthan Royals",
+      "captain": "Sanju Samson",
+      "key_players": ["Sanju Samson", "Yashasvi Jaiswal", "Jos Buttler", "Yuzvendra Chahal", "Ravichandran Ashwin", "Trent Boult", "Riyan Parag", "Dhruv Jurel", "Sandeeep Sharma", "Avesh Khan"],
+      "legends": ["Shane Warne", "Rahul Dravid", "Shane Watson", "Ajinkya Rahane", "Yusuf Pathan", "Steve Smith"]
+    },
+    "SRH": {
+      "name": "Sunrisers Hyderabad",
+      "captain": "Pat Cummins",
+      "key_players": ["Pat Cummins", "Heinrich Klaasen", "Abhishek Sharma", "Travis Head", "Nitish Kumar Reddy", "T Natarajan", "Bhuvneshwar Kumar", "Shahbaz Ahmed", "Mayank Agarwal", "Jaydev Unadkat"],
+      "legends": ["David Warner", "Shikhar Dhawan", "Kane Williamson", "Rashid Khan", "Dale Steyn", "Yuvraj Singh", "VVS Laxman"]
+    },
+    "DC": {
+      "name": "Delhi Capitals",
+      "captain": "Rishabh Pant",
+      "key_players": ["Rishabh Pant", "Axar Patel", "Kuldeep Yadav", "Jake Fraser-McGurk", "Tristan Stubbs", "Mitchell Marsh", "Khaleel Ahmed", "Mukesh Kumar", "Ishant Sharma", "Prithvi Shaw"],
+      "legends": ["Virender Sehwag", "Gautam Gambhir", "Amit Mishra", "Shreyas Iyer", "Shikhar Dhawan", "Zaheer Khan"]
+    },
+    "PBKS": {
+      "name": "Punjab Kings",
+      "captain": "Shashank Singh",
+      "key_players": ["Arshdeep Singh", "Kagiso Rabada", "Shashank Singh", "Ashutosh Sharma", "Sam Curran", "Liam Livingstone", "Jitesh Sharma", "Harshal Patel", "Prabhsimran Singh", "Rahul Chahar"],
+      "legends": ["Yuvraj Singh", "Shaun Marsh", "Glenn Maxwell", "Adam Gilchrist", "David Miller", "Virender Sehwag", "Preity Zinta"]
+    },
+    "GT": {
+      "name": "Gujarat Titans",
+      "captain": "Shubman Gill",
+      "key_players": ["Shubman Gill", "Rashid Khan", "Sai Sudharsan", "Rahul Tewatia", "David Miller", "Mohit Sharma", "Umesh Yadav", "Vijay Shankar", "Spencer Johnson", "Noor Ahmad"],
+      "legends": ["Hardik Pandya", "Mohammed Shami", "Ashish Nehra"]
+    },
+    "LSG": {
+      "name": "Lucknow Super Giants",
+      "captain": "Nicholas Pooran",
+      "key_players": ["Nicholas Pooran", "Marcus Stoinis", "Ravi Bishnoi", "Ayush Badoni", "Mayank Yadav", "Quinton de Kock", "Devdutt Padikkal", "Krunal Pandya", "Amit Mishra", "Naveen-ul-Haq"],
+      "legends": ["KL Rahul", "Gautam Gambhir", "Andy Flower"]
+    }
+  }
+}
