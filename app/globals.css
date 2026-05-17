@@ -15,6 +15,16 @@
   --color-ipl-gold: #f5a623;
   --color-ipl-blue: #1e3a8a;
   --color-ipl-accent: #3b82f6;
+  --animate-shine: shine 1.5s ease-in-out infinite;
+
+  @keyframes shine {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 200%;
+    }
+  }
 }
 
 @media (prefers-color-scheme: dark) {
