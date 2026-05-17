@@ -68,6 +68,24 @@ const OPENING_ANGLES = [
   "Start by asking about INTERNATIONAL CAREER (whether they play international cricket).",
 ];
 
+const FALLBACK_QUESTIONS = [
+  { question: "IS YOUR MYSTERY STAR AN INDIAN NATIONAL?!", targetField: "isIndian" },
+  { question: "DOES HE BATTLE AS A WICKETKEEPER-BATSMAN?!", targetField: "isWicketkeeper" },
+  { question: "HAS THIS TITAN EVER LIFTED THE IPL TROPHY?!", targetField: "hasWonIPLTitle" },
+  { question: "IS HE CURRENTLY TEARING IT UP IN THE ACTIVE ROSTER?!", targetField: "isActive" },
+  { question: "HAS YOUR STAR EVER LED HIS TEAM TO AN IPL TITLE AS CAPTAIN?!", targetField: "hasLedTeamToTitle" },
+  { question: "IS HE A DEVASTATING OVERSEAS POWER-HITTER?!", targetField: "isOverseas" },
+  { question: "DOES HE BOWL THOSE FEROCIOUS PACE DELIVERIES?!", targetField: "isPaceBowler" },
+  { question: "IS HE A MYSTERY SPIN MASTER?!", targetField: "isSpinBowler" },
+  { question: "DOES HE WEAR THE LEGENDARY ORANGE CAP?!", targetField: "hasOrangeCap" },
+  { question: "HAS HE EVER CLAIMED THE PURPLE CAP FOR HIS DOMINANCE?!", targetField: "hasPurpleCap" },
+  { question: "IS HE A PROVEN MATCH-FINISHER IN THE DEATH OVERS?!", targetField: "isFinisher" },
+  { question: "DOES HE BAT IN THE TOP-ORDER POWERPLAY?!", targetField: "powerplayBatter" },
+  { question: "IS YOUR PLAYER AN ELITE ALL-ROUNDER?!", targetField: "isAllRounder" },
+  { question: "HAS HE PLAYED SINCE THE VERY FIRST SEASON IN 2008?!", targetField: "debutIPLYear" },
+  { question: "IS HE A TRUE IPL LEGEND IN EVERY SENSE?!", targetField: "isLegend" }
+];
+
 export async function POST(req: Request) {
   try {
     const { remainingPlayers, history, questionNumber } = await req.json();

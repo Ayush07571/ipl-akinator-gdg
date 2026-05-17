@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import playersData from '@/data/ipl-players.json';
 
 export interface Player {
